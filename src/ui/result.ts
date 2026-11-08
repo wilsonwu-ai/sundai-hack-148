@@ -1,6 +1,6 @@
 // Result screen: headline, stat rows with a printed chance tick, predictability numeral, traits, receipt, share actions,
 // the verify entry point and the why-this-matters panel.
-import type { RunResult, ScienceFact, Trait } from '../contracts'
+import type { Prediction, RunResult, ScienceFact, Trait } from '../contracts'
 import { FOOTER_LINE, TURNS_PER_ROUND } from '../contracts'
 import { h, put, screenEl } from './dom'
 import type { ScreenHandle } from './dom'
@@ -24,9 +24,29 @@ export interface ResultProps {
   hash: string
   seed: number
   facts: ScienceFact[]
+  /** the pick the model least expected when it sealed its guess, or null */
+  boldest: BoldestView | null
   onReplay: () => void
   onVerify: () => void
   onHow: () => void
+}
+
+export interface BoldestView {
+  name: string
+  /** 1-based turn number */
+  turn: number
+  /** e.g. "a 7% chance" */
+  phrase: string
+  engine: Prediction['engine']
+}
+
+export interface ResultHandle extends ScreenHandle {
+  /** shows or hides the percentile line when fresher stats arrive */
+  setPercentile: (v: number | null) => void
+}
+
+function percentileText(v: number): string {
+  return `More predictable than ${v}% of players`
 }
 
 function headlineLines(r: RunResult): [string, string] {
@@ -60,7 +80,7 @@ function statRow(text: string, value: number, max: number, tick: number | null):
   return h('div', { class: 'stat-row' }, h('p', { class: 'stat-text' }, text), bar)
 }
 
-export function renderResult(p: ResultProps): ScreenHandle {
+export function renderResult(p: ResultProps): ResultHandle {
   const r = p.result
   const el = screenEl('screen screen--result')
   el.setAttribute('data-testid', 'result')
@@ -93,7 +113,32 @@ export function renderResult(p: ResultProps): ScreenHandle {
     ),
   )
 
-  const percentile = p.percentile !== null ? h('p', { class: 'percentile' }, `More predictable than ${p.percentile}% of players`) : null
+  const percentile = h('p', { class: 'percentile', 'data-testid': 'percentile' })
+  const setPercentile = (v: number | null): void => {
+    percentile.textContent = v !== null ? percentileText(v) : ''
+    percentile.hidden = v === null
+  }
+  setPercentile(p.percentile)
+
+  const b = p.boldest
+  const boldest = b
+    ? h(
+        'section',
+        { class: 'boldest', 'data-testid': 'boldest' },
+        h('h2', { class: 'group-title mono' }, 'Your boldest pick'),
+        h(
+          'p',
+          { class: 'boldest-line' },
+          h('strong', {}, b.name),
+          ` on turn ${b.turn}. When it sealed its guess, the model gave that pick ${b.phrase}.`,
+        ),
+        h(
+          'p',
+          { class: 'small mono boldest-engine' },
+          b.engine === 'behaviorgpt-v4' ? 'Odds from BehaviorGPT-v4 and the on-device habit model' : 'Odds from the on-device habit model',
+        ),
+      )
+    : null
 
   const traits =
     p.traits.length > 0
@@ -217,6 +262,7 @@ export function renderResult(p: ResultProps): ScreenHandle {
     numeral,
     percentile,
     traits,
+    boldest,
     h('section', { class: 'receipt' }, renderPips(p.pips, true)),
     preview,
     h(
@@ -235,5 +281,5 @@ export function renderResult(p: ResultProps): ScreenHandle {
     h('div', { class: 'action-bar' }, toast, h('div', { class: 'action-row' }, makeBtn, replayBtn, challengeBtn)),
   )
 
-  return { el }
+  return { el, setPercentile }
 }

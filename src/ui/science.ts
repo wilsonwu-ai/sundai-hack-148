@@ -24,7 +24,12 @@ export function renderScience(onBack: () => void): ScreenHandle {
   const steps = h(
     'ol',
     { class: 'steps' },
-    h('li', {}, h('strong', {}, 'It watches.'), ' Every tap teaches a small model your taste and your habits.'),
+    h(
+      'li',
+      {},
+      h('strong', {}, 'It watches.'),
+      ' Every tap teaches a small on-device model your taste and your habits. With the live model on, BehaviorGPT-v4 ranks the cards from your taps too, zero-shot: it was never trained on these 96 items.',
+    ),
     h('li', {}, h('strong', {}, 'It seals.'), ' Before each tap it locks its guess with a hash you can check.'),
     h('li', {}, h('strong', {}, 'It dares.'), ' In round 2 it shows you its guess, then seals a second guess for what you will pick instead.'),
   )

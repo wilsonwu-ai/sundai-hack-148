@@ -11,6 +11,7 @@ import {
   type Turn,
   type TurnView,
 } from '../contracts'
+import type { TurnOdds } from './boldest'
 import { getItem } from './catalog'
 import { dealTurn } from './deck'
 import { mulberry32 } from './rng'
@@ -25,6 +26,9 @@ interface Pending {
   shown?: string
   sealed: string
   seal: Seal
+  /** the sealing prediction's probabilities and engine, kept private until the tap */
+  probs: number[]
+  engine: Prediction['engine']
 }
 
 /** The most likely card among `allowed`, by the prediction's probabilities (ties go to the lower position). */
@@ -40,6 +44,8 @@ function bestAmong(p: Prediction, cards: string[], allowed: (id: string) => bool
 export class Game {
   readonly turns: Turn[] = []
   readonly seals: Seal[] = []
+  /** per picked turn: the odds the sealing prediction gave the card that was picked (parallel to `turns`) */
+  readonly odds: TurnOdds[] = []
   private readonly rng: () => number
   private readonly used = new Set<string>()
   private pending: Pending | null = null
@@ -64,9 +70,11 @@ export class Game {
 
       let shown: string | undefined
       let sealed: string
+      let sealedBy: Prediction
       if (round === 1) {
         const p = await predictor.predict(history, cards, ctx)
         sealed = cards.includes(p.top) ? p.top : cards[0]
+        sealedBy = p
       } else {
         const p0 = await predictor.predict(history, cards, ctx)
         shown = cards.includes(p0.top) ? p0.top : cards[0]
@@ -74,10 +82,19 @@ export class Game {
         const p = await predictor.predict(history, cards, ctx, shownId)
         const d = p.defiance
         sealed = d !== undefined && cards.includes(d) && d !== shownId ? d : bestAmong(p, cards, (id) => id !== shownId)
+        sealedBy = p
       }
 
       const s = await seal(sealed)
-      this.pending = { round, cards, ...(shown !== undefined ? { shown } : {}), sealed, seal: s }
+      this.pending = {
+        round,
+        cards,
+        ...(shown !== undefined ? { shown } : {}),
+        sealed,
+        seal: s,
+        probs: Array.isArray(sealedBy.probs) ? sealedBy.probs.slice() : [],
+        engine: sealedBy.engine,
+      }
       return {
         round,
         index,
@@ -107,6 +124,7 @@ export class Game {
     this.pending = null
     this.turns.push(turn)
     this.seals.push(cur.seal)
+    this.odds.push({ odds: cur.probs[position] ?? Number.NaN, engine: cur.engine })
     this.o.predictor.observe(turn)
 
     let status: RevealStatus

@@ -3,6 +3,7 @@
 import type { Predictor, ScienceFact, Stats, TurnView } from '../contracts'
 import { TURNS_PER_ROUND } from '../contracts'
 import facts from '../data/facts.json'
+import { boldestMove, oddsPhrase } from '../engine/boldest'
 import { getItem } from '../engine/catalog'
 import { fingerprint } from '../engine/fingerprint'
 import { Game } from '../engine/game'
@@ -16,7 +17,7 @@ import { renderIntro } from './intro'
 import type { IntroHandle } from './intro'
 import type { Pip } from './parts'
 import { renderResult } from './result'
-import type { ResultProps } from './result'
+import type { ResultHandle, ResultProps } from './result'
 import { renderRound } from './round'
 import { renderScience } from './science'
 import { initTheme } from './theme'
@@ -71,6 +72,7 @@ export function startApp(root: HTMLElement): void {
   let statsRequested = false
   let current: ScreenHandle | null = null
   let lastResult: ResultProps | null = null
+  let resultHandle: ResultHandle | null = null
 
   function mount(handle: ScreenHandle): void {
     current?.destroy?.()
@@ -124,7 +126,7 @@ export function startApp(root: HTMLElement): void {
 
   function showIntro(): void {
     const vs = urlSeed !== null && urlVs !== null && !urlSeedUsed ? urlVs : null
-    const intro: IntroHandle = renderIntro({ vs, onPlay: () => begin(false), onHow: () => showScience(showIntro) })
+    const intro: IntroHandle = renderIntro({ vs, live: API !== '', onPlay: () => begin(false), onHow: () => showScience(showIntro) })
     mount(intro)
     intro.setStats(stats)
     if (API && !statsRequested) {
@@ -226,13 +228,10 @@ export function startApp(root: HTMLElement): void {
       return
     }
     const r = g.result(runId)
-    if (API && !posted) {
-      posted = true
-      void postResult(r)
-    }
     const ticks = chance(r)
     const pct = predictability(r)
     const first = g.seals[0]
+    const b = boldestMove(g.turns, g.odds)
     const props: ResultProps = {
       result: r,
       pct,
@@ -244,16 +243,38 @@ export function startApp(root: HTMLElement): void {
       hash: first ? short(first.commitment) : '',
       seed: gameSeed,
       facts: mattersFacts(),
+      boldest: b ? { name: getItem(b.turn.pick).name, turn: b.index + 1, phrase: oddsPhrase(b.odds), engine: b.engine } : null,
       onReplay: () => begin(true),
       onVerify: () => openVerifySheet(sealRows()),
       onHow: () =>
         showScience(() => {
-          if (lastResult) mount(renderResult(lastResult))
+          if (lastResult) showResultScreen(lastResult)
           else showIntro()
         }),
     }
     lastResult = props
-    mount(renderResult(props))
+    showResultScreen(props)
+    if (API && !posted) {
+      posted = true
+      // Post first, then refresh the stats, so the percentile counts everyone who finished before you, you included.
+      // When a room plays along, the line appears as soon as 20 people have finished.
+      void postResult(r)
+        .then(() => loadStats())
+        .then((s) => {
+          if (!s) return
+          stats = s
+          const v = percentile(pct, s)
+          if (lastResult !== props) return
+          props.percentile = v
+          if (resultHandle && current === resultHandle) resultHandle.setPercentile(v)
+        })
+    }
+  }
+
+  function showResultScreen(props: ResultProps): void {
+    const handle = renderResult(props)
+    resultHandle = handle
+    mount(handle)
   }
 
   showIntro()

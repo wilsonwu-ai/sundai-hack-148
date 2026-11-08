@@ -4,7 +4,7 @@
 
 vite v8.3.6 building client environment for production...
 transforming...
-✓ 31 modules transformed.
+✓ 32 modules transformed.
 rendering chunks...
 computing gzip size...
 dist/index.html                                                          1.46 kB │ gzip:  0.66 kB
@@ -32,7 +32,7 @@ dist/assets/jetbrains-mono-latin-400-normal-V6pRDFza.woff2              21.16 kB
 dist/assets/jetbrains-mono-latin-700-normal-BYuf6tUa.woff2              21.90 kB
 dist/assets/jetbrains-mono-latin-400-normal-6-qcROiO.woff               27.49 kB
 dist/assets/jetbrains-mono-latin-700-normal-D3wTyLJW.woff               28.20 kB
-dist/assets/index-BNIh952n.css                                          41.93 kB │ gzip: 18.96 kB
-dist/assets/index-Dp9VFR-x.js                                           51.39 kB │ gzip: 17.46 kB
+dist/assets/index-C4NMyqI8.css                                          42.69 kB │ gzip: 19.12 kB
+dist/assets/index-DDF1n5iK.js                                           53.47 kB │ gzip: 18.23 kB
 
-✓ built in 53ms
+✓ built in 83ms

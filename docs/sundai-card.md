@@ -17,7 +17,9 @@ An AI seals its guess before each of your 12 taps, then shows you its guess and 
 
 DEFY is a 60-second phone game about behavioral prediction. Before every tap, the model locks in its guess with a SHA-256 hash you can check afterwards, so it cannot change its answer once you have picked. In Round 2 it shows you its guess and dares you to defy it, while sealing a second guess for what you will pick instead.
 
-It runs on Unbox AI's BehaviorGPT through a small Cloudflare Worker that keeps the key on the server, blended with an on-device habit model that keeps the game working offline.
+It runs live on Unbox AI's BehaviorGPT-v4 through a small Cloudflare Worker that keeps the key on the server. BehaviorGPT ranks the cards zero-shot: it was never trained on these 96 items. An on-device habit model blends in and keeps the game working if the network drops.
+
+At the end it names your boldest pick: the one the model gave the lowest odds when it sealed its guess.
 
 It can't be rigged: in a frozen simulation of the on-device habit model (200 games per player type), a random player lands at chance (23.0% against 25%), while a player with consistent taste gets called 76.6% of the time.
 
@@ -31,5 +33,14 @@ A toy, not a study. Twelve taps cannot measure free will.
 
 ## Before posting
 
-- If the Worker is not live by 19:45, change the second paragraph to: "It runs on an on-device habit model, with a BehaviorGPT mode through a small Cloudflare Worker that keeps the key on the server."
+- The Worker was live on BehaviorGPT-v4 on 8 November (rank call 200, about 190 ms upstream). If it stops answering before 19:45, change the second paragraph to: "It runs on an on-device habit model, with a BehaviorGPT-v4 mode through a small Cloudflare Worker that keeps the key on the server." The game itself needs no change: any turn the live model misses falls back to the habit model, and the result says which engine answered.
+- The demo link 404s until the repo is public and GitHub Pages has deployed. Check it loads before setting the card live.
 - Numbers: 23.0%, 25% and 76.6% come from `research/qa/test-output.txt`; 200 games from `SPEC.md` A2; 1,305 and 40% from `research/verified.json` (R3-F13a, R3-F13).
+
+## Pitch (top five only: 5 minutes, no slides, shared screen)
+
+1. Open the live site on the laptop and share the screen. On a wide screen the intro shows a QR on the right: ask the room to scan it and play along.
+2. Play one game live. Move fast through Round 1, then slow down on Round 2: the card it shows you is the dare. Let the room see a sealed guess flip after the tap.
+3. Finish on the result: picks called beside chance, then the boldest pick. Once 20 people have finished, the percentile appears on its own.
+4. If there is time, open the verify panel and recompute one seal, then How it works for the zero-shot line.
+5. Close on the room's own numbers, not a claim: "BehaviorGPT ranked 96 items it had never seen, from 12 taps. Here is how predictable this room was." Then point at the live count and the percentile.

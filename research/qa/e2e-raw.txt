@@ -1,12 +1,18 @@
 
-Running 6 tests using 2 workers
+Running 12 tests using 4 workers
 
-  ✓  2 [desktop] › tests/e2e/flow.spec.ts:30:1 › twelve taps: sealed before the tap, verified after, result and share card (7.1s)
-  ✓  1 [mobile] › tests/e2e/flow.spec.ts:30:1 › twelve taps: sealed before the tap, verified after, result and share card (7.1s)
-  ✓  4 [mobile] › tests/e2e/flow.spec.ts:128:1 › replay starts a fresh game (6.8s)
-  ✓  3 [desktop] › tests/e2e/flow.spec.ts:128:1 › replay starts a fresh game (6.8s)
-  -  6 [desktop] › tests/e2e/flow.spec.ts:144:1 › tap targets are at least 48 px on a phone
-  ✓  5 [mobile] › tests/e2e/flow.spec.ts:144:1 › tap targets are at least 48 px on a phone (495ms)
+  ✓   2 [desktop] › tests/e2e/v2.spec.ts:20:1 › the result names the boldest pick with the odds the model gave it (7.1s)
+  ✓   5 [desktop] › tests/e2e/v2.spec.ts:34:1 › a presenter screen shows the play-along QR and a phone does not (118ms)
+  ✓   3 [mobile] › tests/e2e/flow.spec.ts:30:1 › twelve taps: sealed before the tap, verified after, result and share card (7.3s)
+  ✓   4 [desktop] › tests/e2e/flow.spec.ts:30:1 › twelve taps: sealed before the tap, verified after, result and share card (7.3s)
+  ✓   6 [desktop] › tests/e2e/v2.spec.ts:51:1 › How it works credits BehaviorGPT-v4 and says it runs zero-shot (123ms)
+  ✓   1 [mobile] › tests/e2e/v2.spec.ts:20:1 › the result names the boldest pick with the odds the model gave it (7.6s)
+  ✓   9 [mobile] › tests/e2e/v2.spec.ts:34:1 › a presenter screen shows the play-along QR and a phone does not (79ms)
+  ✓  10 [mobile] › tests/e2e/v2.spec.ts:51:1 › How it works credits BehaviorGPT-v4 and says it runs zero-shot (122ms)
+  ✓   8 [desktop] › tests/e2e/flow.spec.ts:128:1 › replay starts a fresh game (6.4s)
+  ✓   7 [mobile] › tests/e2e/flow.spec.ts:128:1 › replay starts a fresh game (6.4s)
+  -  12 [desktop] › tests/e2e/flow.spec.ts:144:1 › tap targets are at least 48 px on a phone
+  ✓  11 [mobile] › tests/e2e/flow.spec.ts:144:1 › tap targets are at least 48 px on a phone (520ms)
 
   1 skipped
-  5 passed (15.3s)
+  11 passed (14.9s)

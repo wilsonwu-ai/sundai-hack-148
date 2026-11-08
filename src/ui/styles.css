@@ -1406,3 +1406,74 @@ body.og-page {
     animation: none !important;
   }
 }
+
+/* ---------- result: the pick the model least expected ---------- */
+
+.boldest {
+  margin-top: 16px;
+  padding: 12px;
+  background: var(--surface-2);
+  border-left: 4px solid var(--you);
+  border-radius: 4px;
+}
+
+.boldest-line {
+  font: 400 16px/24px var(--sys);
+}
+
+.boldest-line strong {
+  color: var(--you);
+  font-weight: 700;
+}
+
+.boldest-engine {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* ---------- intro on a presenter's screen: QR so the room can play along ---------- */
+
+.play-along {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .play-along {
+    position: fixed;
+    top: 50%;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 220px;
+    transform: translateY(-50%);
+  }
+
+  .play-along-tile {
+    display: block;
+    width: 188px;
+    padding: 10px;
+    margin-bottom: 6px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+
+  .play-along-qr {
+    display: block;
+    width: 168px;
+    height: 168px;
+  }
+
+  .play-along-url {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+
+  .play-along-url span {
+    white-space: nowrap;
+  }
+}

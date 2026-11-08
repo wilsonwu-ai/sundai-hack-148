@@ -8,8 +8,30 @@ import { themeButton } from './theme'
 export interface IntroOpts {
   /** challenge link: the friend's predictability, or null */
   vs: number | null
+  /** true when results are saved to the live histogram (VITE_API_BASE is set) */
+  live?: boolean
   onPlay: () => void
   onHow: () => void
+}
+
+/** The live game's address, as printed beside the QR. public/qr.svg encodes the same URL (scripts/make_qr.sh). */
+const PLAY_LABEL = 'wilsonwu-ai.github.io/sundai-hack-148'
+
+/** Desktop only (CSS): a QR so a room watching a shared screen can play along on their phones. */
+function playAlong(live: boolean): HTMLElement {
+  return h(
+    'aside',
+    { class: 'play-along', 'data-testid': 'play-along', 'aria-label': 'Play along on your phone' },
+    h(
+      'span',
+      { class: 'play-along-tile' },
+      h('img', { class: 'play-along-qr', src: `${import.meta.env.BASE_URL}qr.svg`, alt: `QR code for ${PLAY_LABEL}`, width: '168', height: '168' }),
+    ),
+    h('p', { class: 'group-title mono' }, 'Play along'),
+    // lowercase on purpose: GitHub Pages paths are case-sensitive, so the typed URL must match
+    h('p', { class: 'play-along-url mono' }, h('span', {}, 'wilsonwu-ai.github.io/'), h('wbr', {}), h('span', {}, 'sundai-hack-148')),
+    h('p', { class: 'small' }, live ? 'Scan to play on your phone. Everyone who finishes joins the live count.' : 'Scan to play on your phone.'),
+  )
 }
 
 export interface IntroHandle extends ScreenHandle {
@@ -56,6 +78,7 @@ export function renderIntro(o: IntroOpts): IntroHandle {
     play,
     counter,
     h('p', { class: 'footer' }, h('span', {}, FOOTER_LINE), ' ', h('span', {}, "Built at Sundai Hack 148 with Unbox AI's BehaviorGPT.")),
+    playAlong(o.live === true),
   )
 
   return {
