@@ -1,0 +1,14 @@
+name = "defy-api"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+[[kv_namespaces]]
+binding = "DEFY_KV"
+id = "ad112442810944d49b6ae232b4b76b0d"
+
+[vars]
+UNBOX_CATALOG_ID = "cat_2d82996e810d5d84a04ad3f4"
+ALLOWED_ORIGIN = "https://wilsonwu-ai.github.io"
+
+# The BehaviorGPT key is a secret, never put it in this file:
+#   npx wrangler secret put UNBOXAI_API_KEY

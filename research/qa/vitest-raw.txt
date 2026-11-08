@@ -1,0 +1,75 @@
+
+ RUN  v5.1.0 /Users/wilsonwu/sundai/hack-148
+
+ ✓ tests/unit/frozen/seal-score.test.ts > seal > commits with sha-256 of `${id}:${salt}` and a 16-byte salt 3ms
+ ✓ tests/unit/frozen/seal-score.test.ts > seal > verifies only the sealed id with the original salt 1ms
+ ✓ tests/unit/frozen/seal-score.test.ts > seal > uses a fresh salt every time 1ms
+ ✓ tests/unit/frozen/seal-score.test.ts > seal > short() is the first 8 hex characters 0ms
+ ✓ tests/unit/frozen/seal-score.test.ts > score > counts called, defied, calledDefy and obeyed 0ms
+ ✓ tests/unit/frozen/seal-score.test.ts > score > predictability = round(100 * (called1 + calledDefy) / (6 + defied)) 0ms
+ ✓ tests/unit/frozen/seal-score.test.ts > score > chance baselines are 1.5 and defied / 3 0ms
+ ✓ tests/unit/frozen/seal-score.test.ts > score > percentile is null below 20 players and uses half of your own bin 0ms
+ ✓ tests/unit/frozen/game.test.ts > Game > follows the frozen call order, seals before the tap and reports honest statuses 13ms
+ ✓ tests/unit/frozen/game.test.ts > Game > guards the turn protocol 1ms
+ ✓ tests/unit/frozen/game.test.ts > Game > deals from a dedicated mulberry32(seed) stream, exactly like dealTurn 1ms
+ ✓ tests/unit/frozen/fingerprint-copy.test.ts > fingerprint > names the favourite vibe of a consistent player 8ms
+ ✓ tests/unit/frozen/fingerprint-copy.test.ts > fingerprint > spots a corner habit 3ms
+ ✓ tests/unit/frozen/fingerprint-copy.test.ts > fingerprint > stays clean for random players 21ms
+ ✓ tests/unit/frozen/fingerprint-copy.test.ts > A6 copy > no em dash and no talking-down labels in shipped source 2ms
+ ✓ tests/unit/frozen/fingerprint-copy.test.ts > A6 copy > every science fact rests on verified ids and every number traces to a verified quote or claim 1ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > catalog > passes its own validator 2ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > catalog > has 96 items, 16 per vibe, unique ids and names 1ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > catalog > items are generic, clean and card-sized 5ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > catalog > getItem finds every id and throws on unknown ids 1ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > catalog > validator rejects broken catalogs 2ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > rng + deck > mulberry32 is deterministic and in [0, 1) 10ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > rng + deck > deals 12 turns of 4 cards with 4 different vibes and no repeats 24ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > rng + deck > is deterministic per seed 1ms
+ ✓ tests/unit/frozen/catalog-deck.test.ts > rng + deck > puts vibes in random positions (no vibe owns a corner) 1ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > habit model > has the calibrated parameters 1ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > habit model > a fresh model leans top-left and returns 4 probabilities summing to 1 1ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > habit model > round 2: the shown card is least likely and defiance is never the shown card 0ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > habit model > one observed pick moves vibe weights by exactly lr * (x - p) 0ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > habit model > after one pick it predicts the same card again on the same deal 0ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > BG_WEIGHT is 1 0ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > posts the frozen request and blends z-scored BehaviorGPT scores into the habit logits 28ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > sends the picks so far as history and forwards observe to the habit model 1ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > replaces a null score with the minimum before z-scoring 1ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > falls back to the habit model on a network error and stops calling the network 0ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > falls back on a slow response 31ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > falls back on a non-200 answer and on all-null scores 1ms
+ ✓ tests/unit/frozen/habit-remote.test.ts > remote predictor > round 2 defiance is never the shown card 0ms
+stdout | tests/unit/frozen/simulation.test.ts > A2 simulation > lands: a consistent-taste player is called >= 65% on Round 1 turns 3-6
+[A2] consistent taste, R1 turns 3-6: 76.6% (chance 25%)
+
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/rank > sends the frozen upstream body with only the key header, and maps scores to cards (null when missing) 31ms
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/rank > allows an empty history 1ms
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/rank > rejects unknown ids and bad shapes with 400 2ms
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/rank > returns 502 {fallback:true} on an upstream error or timeout 53ms
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/rank > returns 503 {fallback:true} without calling upstream when no key is configured 1ms
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/rank > limits one IP to 60 rank calls a minute, in memory only 5ms
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/result and GET /api/stats > validates bounds 1ms
+ ✓ tests/unit/frozen/worker.test.ts > POST /api/result and GET /api/stats > records a result once per runId, with a 7-day key, and stats reflect it 1ms
+ ✓ tests/unit/frozen/worker.test.ts > CORS and routing > answers preflight for allowed origins, including localhost 1ms
+ ✓ tests/unit/frozen/worker.test.ts > CORS and routing > refuses other origins on every method 0ms
+ ✓ tests/unit/frozen/worker.test.ts > CORS and routing > serves requests without an Origin header and 404s unknown routes 0ms
+ ✓ tests/unit/frozen/worker.test.ts > CORS and routing > never writes an IP address to KV 0ms
+stdout | tests/unit/frozen/simulation.test.ts > A2 simulation > lands: a corner-tapper is called >= 75% on Round 1 turns 3-6
+[A2] corner tapper, R1 turns 3-6: 92.3% (chance 25%)
+
+ ✓ tests/unit/frozen/simulation.test.ts > A2 simulation > lands: a consistent-taste player is called >= 65% on Round 1 turns 3-6 88ms
+ ✓ tests/unit/frozen/simulation.test.ts > A2 simulation > lands: a corner-tapper is called >= 75% on Round 1 turns 3-6 54ms
+stdout | tests/unit/frozen/simulation.test.ts > A2 simulation > is honest: a random player sits at chance in both rounds
+[A2] random, R1: 23.0% (chance 25%); R2 defiances called: 33.0% (chance 33.3%), n=900
+
+stdout | tests/unit/frozen/simulation.test.ts > A2 simulation > reads defiance: a defier who takes their next favourite is called >= 60%
+[A2] defier (next favourite), defiances called: 73.5% (chance 33.3%)
+
+ ✓ tests/unit/frozen/simulation.test.ts > A2 simulation > is honest: a random player sits at chance in both rounds 99ms
+ ✓ tests/unit/frozen/simulation.test.ts > A2 simulation > reads defiance: a defier who takes their next favourite is called >= 60% 54ms
+
+ Test Files  7 passed (7)
+      Tests  54 passed (54)
+   Start at  09:43:15
+   Duration  426ms (tests 80%, import 10%, transform 7%, worker 2%)
+

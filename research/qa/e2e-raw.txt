@@ -1,0 +1,12 @@
+
+Running 6 tests using 2 workers
+
+  ✓  2 [desktop] › tests/e2e/flow.spec.ts:30:1 › twelve taps: sealed before the tap, verified after, result and share card (7.1s)
+  ✓  1 [mobile] › tests/e2e/flow.spec.ts:30:1 › twelve taps: sealed before the tap, verified after, result and share card (7.1s)
+  ✓  4 [mobile] › tests/e2e/flow.spec.ts:128:1 › replay starts a fresh game (6.8s)
+  ✓  3 [desktop] › tests/e2e/flow.spec.ts:128:1 › replay starts a fresh game (6.8s)
+  -  6 [desktop] › tests/e2e/flow.spec.ts:144:1 › tap targets are at least 48 px on a phone
+  ✓  5 [mobile] › tests/e2e/flow.spec.ts:144:1 › tap targets are at least 48 px on a phone (495ms)
+
+  1 skipped
+  5 passed (15.3s)

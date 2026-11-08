@@ -1,0 +1,317 @@
+{
+ "lane": "R3",
+ "facts": [
+  {
+   "id": "R3-F1",
+   "claim": "Apr 2026 Substack: Poulos built an AI version of himself from four years of Claude chats (persona markdown files).",
+   "url": "https://stefanpoulos.substack.com/p/i-built-an-ai-version-of-myself-heres",
+   "quote": "People have said some version of \u201cI love how your brain works\u201d to me more times than I can count.",
+   "date": "2026-04-09"
+  },
+  {
+   "id": "R3-F2",
+   "claim": "Mar 2025 Substack frames the 'AI knows me better' worry as an autonomy and manipulation question.",
+   "url": "https://exploringchatgpt.substack.com/p/the-algorithmic-self",
+   "quote": "Are we truly autonomous decision-makers? Can AI guide us to better choices, or does it subtly manipulate our behavior?",
+   "date": "2025-03-28"
+  },
+  {
+   "id": "R3-F3",
+   "claim": "Same post leans on Libet to argue prediction may precede conscious choice (free-will angle).",
+   "url": "https://exploringchatgpt.substack.com/p/the-algorithmic-self",
+   "quote": "brain activity predicting a decision occurred several seconds before participants reported consciously making a choice",
+   "date": "2025-03-28"
+  },
+  {
+   "id": "R3-F4",
+   "claim": "Jan 2026 Substack: recommendations mean choice starts as a suggestion, not an initiation (paywalled after intro).",
+   "url": "https://exploringchatgpt.substack.com/p/choice-doesnt-start-with-you",
+   "quote": "Life is no longer something you initiate first. It is something you select from. And that changes what choice actually means.",
+   "date": "2026-01-26"
+  },
+  {
+   "id": "R3-F5",
+   "claim": "Jul 2025 Substack (Vox Day) makes the blunt 'it knows before you do' claim; ~55 likes, 19 comments (unlabeled counts).",
+   "url": "https://aicentral.substack.com/p/ai-and-behavioral-pattern-recognition",
+   "quote": "In many scenarios, SSH-AI will know what you are going to do before you do it.",
+   "date": "2025-07-17"
+  },
+  {
+   "id": "R3-F6",
+   "claim": "Jun 2026 Verasight: AI digital twins missed lower-profile poll questions by up to 12.8 points.",
+   "url": "https://www.verasight.io/reports/can-ai-digital-twins-replace-human-respondents",
+   "quote": "On newer or lower-profile questions it was off by as much as 12.8 points, roughly seven times worse.",
+   "date": "2026-06-02"
+  },
+  {
+   "id": "R3-F7",
+   "claim": "Same Verasight report: twins matched polls on famous questions (2.1 and 1.8 points off), so they look right where it is easy.",
+   "url": "https://www.verasight.io/reports/can-ai-digital-twins-replace-human-respondents",
+   "quote": "THESEUS came within 2.1 points of a real poll on Trump approval and 1.8 points on the generic ballot.",
+   "date": "2026-06-02"
+  },
+  {
+   "id": "R3-F8",
+   "claim": "2024 Every essay: Dan Shipper simulated his own future journal entries in Claude to test a funding decision.",
+   "url": "https://every.to/chain-of-thought/simulating-one-way-door-decisions-with-ai",
+   "quote": "It allows you to try on a decision like you would a piece of clothing.",
+   "date": "2024-03-28"
+  },
+  {
+   "id": "R3-F9",
+   "claim": "2024 Substack on synthetic respondents: results are mixed and unpredictable in advance (2024, older item).",
+   "url": "https://10xinsights.substack.com/p/synthetic-respondents-and-digital-e18",
+   "quote": "Sometimes it works, sometimes it doesn't. The bad news is that we don't know in advance which will work.",
+   "date": "2024-09-12"
+  },
+  {
+   "id": "R3-F10",
+   "claim": "Latent Space (Substack) interview with Simile CEO cites the 85% self-replication benchmark for 1,000-person agents.",
+   "url": "https://www.latent.space/p/simile",
+   "quote": "we could replicate people's behaviors and attitudes 85 percent as accurately as people would replicate their own.",
+   "date": "Aug 21 (year not shown)"
+  },
+  {
+   "id": "R3-F11",
+   "claim": "Park's critique: frontier LLMs act like rational machines, a bad model of real people.",
+   "url": "https://www.latent.space/p/simile",
+   "quote": "what these models are really good at today is they're trying to become the super rational, objective machines.",
+   "date": "Aug 21 (year not shown)"
+  },
+  {
+   "id": "R3-F12",
+   "claim": "Park's 'say vs do' angle: models learned online self-report, not real-life behavior.",
+   "url": "https://www.latent.space/p/simile",
+   "quote": "not just what people say they do online, but what they do in real life.",
+   "date": "Aug 21 (year not shown)"
+  },
+  {
+   "id": "R3-F13",
+   "claim": "arXiv 2026 (1,305 people, Newcomb-style): many people treat AI as authority on their own behavior.",
+   "url": "https://arxiv.org/abs/2603.28944",
+   "quote": "Over 40% of participants treated AI as such a predictive authority about their own behavior",
+   "date": "2026-03-30"
+  },
+  {
+   "id": "R3-F14",
+   "claim": "Same paper: AI predictions alone can steer choices, even narrowing options people consider.",
+   "url": "https://arxiv.org/abs/2603.28944",
+   "quote": "the mere presence of AI predictions may shape their decision-making, narrowing the futures they consider",
+   "date": "2026-03-30"
+  },
+  {
+   "id": "R3-F15",
+   "claim": "Oct 2026 'Rigged Draw' Show HN toy (AI guesses your 1-9 picks, scores you vs 206 people): 209 points, 116 comments on mirror page.",
+   "url": "https://zeli.app/story/50074909",
+   "quote": "After a 10-number warm-up, your final score compares you to 206 people from a psychology study.",
+   "date": "2026-10-13"
+  },
+  {
+   "id": "R3-F16",
+   "claim": "Aug 2025 Bulletin essay: the 'prediction is control' angle.",
+   "url": "https://thebulletin.org/2025/08/how-ai-and-surveillance-capitalism-are-undermining-democracy",
+   "quote": "What makes AI prediction both powerful and lucrative is being able to control what happens next.",
+   "date": "2025-08-21"
+  },
+  {
+   "id": "R3-F17",
+   "claim": "Nov 2025 Substack: anticipation replaces response as the mode of control.",
+   "url": "https://battle4cog.substack.com/p/algorithmic-governance",
+   "quote": "States and corporations no longer wait to respond to public demand or dissent; they anticipate it.",
+   "date": "2025-11-11"
+  }
+ ],
+ "projects": [
+  {
+   "id": "R3-P1",
+   "name": "Rigged Draw (Show HN)",
+   "url": "https://zeli.app/story/50074909",
+   "what": "Pick 1-9 unpredictably; ten small predictors guess each pick; score vs 206 study participants.",
+   "kind": "demo",
+   "traction": "209 points, 116 comments (read on zeli.app mirror of Show HN)",
+   "license": "unknown",
+   "date": "2026-10-13"
+  },
+  {
+   "id": "R3-P2",
+   "name": "Stefan Poulos: I Built an AI Version of Myself",
+   "url": "https://stefanpoulos.substack.com/p/i-built-an-ai-version-of-myself-heres",
+   "what": "Self-clone from 4 years of Claude chats; found he is more direct at work than in public writing.",
+   "kind": "post",
+   "traction": "unlabeled '1' near share; no comment/restack counts visible",
+   "date": "2026-04-09"
+  },
+  {
+   "id": "R3-P3",
+   "name": "Dan Shipper: Simulating one-way door decisions with AI",
+   "url": "https://every.to/chain-of-thought/simulating-one-way-door-decisions-with-ai",
+   "what": "Claude wrote future journal entries in his voice for 'raise' vs 'don't raise'; raise-entry predicted real pressure.",
+   "kind": "essay",
+   "traction": "not visible on page",
+   "date": "2024-03-28"
+  },
+  {
+   "id": "R3-P4",
+   "name": "Verasight: Can AI digital twins replace human respondents?",
+   "url": "https://www.verasight.io/reports/can-ai-digital-twins-replace-human-respondents",
+   "what": "Four experiments; twins right on famous poll questions, off up to 12.8 points on others.",
+   "kind": "post",
+   "traction": "not visible on page",
+   "date": "2026-06-02"
+  },
+  {
+   "id": "R3-P5",
+   "name": "Latent Space: Simile / Joon Park interview",
+   "url": "https://www.latent.space/p/simile",
+   "what": "Podcast-essay on population-scale behavioral twins; intro cites Simile's $2B Series B.",
+   "kind": "post",
+   "traction": "counts not visible",
+   "date": "year not shown"
+  },
+  {
+   "id": "R3-P6",
+   "name": "Exploring ChatGPT: The Algorithmic Self",
+   "url": "https://exploringchatgpt.substack.com/p/the-algorithmic-self",
+   "what": "Essay on predictive AI, autonomy, Libet and free will.",
+   "kind": "post",
+   "traction": "unlabeled 8/3/1 (likely likes/comments/restack, unconfirmed)",
+   "date": "2025-03-28"
+  },
+  {
+   "id": "R3-P7",
+   "name": "Exploring ChatGPT: Choice Doesn't Start With You",
+   "url": "https://exploringchatgpt.substack.com/p/choice-doesnt-start-with-you",
+   "what": "Argues AI suggestions now originate our choices; paywalled.",
+   "kind": "post",
+   "traction": "unlabeled '7'",
+   "date": "2026-01-26"
+  },
+  {
+   "id": "R3-P8",
+   "name": "Vox Day: AI and Behavioral Pattern Recognition",
+   "url": "https://aicentral.substack.com/p/ai-and-behavioral-pattern-recognition",
+   "what": "Claims human behavior is predictable and AI will forecast it; commenters test it on themselves.",
+   "kind": "post",
+   "traction": "about 55 likes, 19 comments, 1 restack (unlabeled counts read on page)",
+   "date": "2025-07-17"
+  },
+  {
+   "id": "R3-P9",
+   "name": "10x Insights: Synthetic respondents and digital twins",
+   "url": "https://10xinsights.substack.com/p/synthetic-respondents-and-digital-e18",
+   "what": "Market-research view: synthetic respondents mixed; cites an 18% market-share uplift example.",
+   "kind": "post",
+   "traction": "counts not visible",
+   "date": "2024-09-12"
+  },
+  {
+   "id": "R3-P10",
+   "name": "Battle 4 Cognition: Algorithmic Governance",
+   "url": "https://battle4cog.substack.com/p/algorithmic-governance",
+   "what": "Argues prediction-based control is replacing law and punishment.",
+   "kind": "post",
+   "traction": "unlabeled '4'",
+   "date": "2025-11-11"
+  },
+  {
+   "id": "R3-P11",
+   "name": "Faith in AI can narrow the futures individuals consider",
+   "url": "https://arxiv.org/abs/2603.28944",
+   "what": "1,305-person Newcomb-style study on deferring to AI predictions of your own choice.",
+   "kind": "paper",
+   "traction": "n/a",
+   "date": "2026-03-30"
+  },
+  {
+   "id": "R3-P12",
+   "name": "Bulletin: How AI and surveillance capitalism are undermining democracy",
+   "url": "https://thebulletin.org/2025/08/how-ai-and-surveillance-capitalism-are-undermining-democracy",
+   "what": "Venkatasubramanian essay: prediction as control, surveillance ratchet.",
+   "kind": "essay",
+   "traction": "not visible",
+   "date": "2025-08-21"
+  },
+  {
+   "id": "R3-P13",
+   "name": "Yui's Blog: I Predicted My Own Drift",
+   "url": "https://yui-sh.github.io/blog/2026/03/24/i-predicted-my-own-drift/",
+   "what": "Agent predicts its own next-step behavior then checks; seen in search snippet only, not fetched.",
+   "kind": "post",
+   "traction": "unknown",
+   "date": "2026-03-24"
+  }
+ ],
+ "idea_seeds": [
+  {
+   "title": "Beat the Predictor, then Obey It",
+   "one_line": "Rigged Draw-style game on shopping choices, then a Newcomb twist: AI shows its guess first, do you comply?",
+   "phone_moment": "AI's predicted pick appears face-down, you tap the opposite, and it flips to show it knew (or did not).",
+   "fact_ids": [
+    "R3-F15",
+    "R3-F13",
+    "R3-F14"
+   ]
+  },
+  {
+   "title": "What You Say vs What You Do",
+   "one_line": "User states a purchase intent, a behavior model predicts from their short action history, gap is shown.",
+   "phone_moment": "Two bars side by side: what you said you would buy vs what the model says you will click.",
+   "fact_ids": [
+    "R3-F12",
+    "R3-F11",
+    "R3-F10"
+   ]
+  },
+  {
+   "title": "Try On a Decision",
+   "one_line": "Enter 5 recent actions, see two simulated next-week futures for a choice, in your own pattern.",
+   "phone_moment": "Two future timelines unfold from your last five taps, one per choice.",
+   "fact_ids": [
+    "R3-F8",
+    "R3-F1"
+   ]
+  },
+  {
+   "title": "Famous vs Obscure Twin",
+   "one_line": "Twin nails common questions and fails rare ones; let users find where it breaks, with a live error score.",
+   "phone_moment": "Slider from common to rare behavior shows prediction confidence collapsing on screen.",
+   "fact_ids": [
+    "R3-F6",
+    "R3-F7",
+    "R3-F9"
+   ]
+  }
+ ],
+ "viral_evidence": [
+  {
+   "what": "Rigged Draw: play-to-be-unpredictable toy vs AI, scored against a study cohort",
+   "url": "https://zeli.app/story/50074909",
+   "mechanic": "Personal score vs population benchmark; shareable result; 'can I beat it' challenge",
+   "metric": "209 points, 116 comments (Show HN mirror, 2026-10-13)"
+  },
+  {
+   "what": "Vox Day 'it will know what you do before you do it' post",
+   "url": "https://aicentral.substack.com/p/ai-and-behavioral-pattern-recognition",
+   "mechanic": "Provocative predictability claim; commenters test it on themselves",
+   "metric": "about 55 likes, 19 comments, 1 restack (unlabeled counts)"
+  }
+ ],
+ "lessons": [
+  "Recurring angles: autonomy vs manipulation, prediction is control, say-vs-do gap, twins fail off the famous questions.",
+  "Substack engagement on this topic is small (single or low double digits); the viral item found is an interactive toy, not an essay.",
+  "Strongest counter-narrative: twins look accurate on easy questions and miss lower-profile ones, so show the failure honestly.",
+  "Newcomb-style finding (people defer to AI about themselves) is a fresh, citable provocation for a demo."
+ ],
+ "gaps": [
+  "No Substack post found where someone predicted their own purchases or habits with measured results.",
+  "No Substack posts found from Astral Codex Ten, One Useful Thing, Experimental History or Understanding AI on this topic.",
+  "Substack like and comment counts are unlabeled on fetched pages; treat as approximate.",
+  "Joan Westenberg's Algorithmic Personality page returned 404; not used.",
+  "Centaur (Nature 2025), Simile funding conflicts, Yui's blog and Pew silicon-sample piece came from search snippets only, not fetched.",
+  "Rigged Draw traction was read on a zeli.app mirror, not the HN page itself; the original Show HN was not fetched.",
+  "The Latent Space episode year is not shown on the page.",
+  "Some fetched quotes were returned by the fetch model and may be paraphrased; code verification is needed."
+ ],
+ "incomplete": false,
+ "notes": "24 of 25 tool calls used. Substack coverage is thin; dated items older than 2025 are labeled (2024 Shipper, 10x Insights). Idea seeds are pointers only, not a choice."
+}

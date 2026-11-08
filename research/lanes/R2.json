@@ -1,0 +1,239 @@
+{
+ "lane": "R2",
+ "incomplete": true,
+ "notes": "25 of 25 calls used. Portal pages (portal.unboxai.com/, /how-it-works/, /docs/) and behaviorgpt.unboxai.com returned nav shell only (JS-rendered, no docs text). Not found: HTTP auth header name, REST base URL beyond /api/v1/shop/, MCP package name and tools, widget embed snippet, store-link import flow, pricing beyond \"free during early access\", prior hackathon projects (two searches, no hits), funding (aggregators only, unverified). Sundai event page URL guess 404'd; /events was a JS shell. Facts R2-F5 and R2-F6 quote text relayed by WebFetch summaries; code should verify. Next step for a fresh agent: fetch raw README sections 'Quick start' and 'Async' for code samples, docs/catalogs.md for portal flow, .claude/skills/portal-app and embed-catalog SKILL.md, and behaviorgpt.unboxai.com via browser.",
+ "facts": [
+  {
+   "id": "R2-F1",
+   "claim": "Official Python SDK exists; repo holds SDK plus a walkthrough notebook",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "This repository holds the Python SDK for the Unbox AI API and a notebook that walks through the model step by step."
+  },
+  {
+   "id": "R2-F2",
+   "claim": "Widgets use a publishable key so the secret key stays off pages and apps",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "On a page or in an app, where your API key must never go, the widgets make the same calls with a publishable key."
+  },
+  {
+   "id": "R2-F3",
+   "claim": "MCP server exists and shares naming with portal JSON and widgets (no tool list found)",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "The portal's JSON uses the same names (catalog_id, user_id, user, item_id, item_ids), as do the widgets and the MCP server."
+  },
+  {
+   "id": "R2-F4",
+   "claim": "Model can only return items in a catalog it knows; the action vocabulary is the uploaded catalog",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "The model can only return items it knows about (a history can still hold items outside your catalogs)."
+  },
+  {
+   "id": "R2-F5",
+   "claim": "Items need not be products; artworks used as proof (title as name, artist as brand, views for sales)",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalog-format.md",
+   "quote": "Embedding and every query work the same at any size; only the map is skipped."
+  },
+  {
+   "id": "R2-F6",
+   "claim": "Catalog upload needs at least id, name, event_type=product, group=product; rest may be null (title-only embedding). Quote is a related limit.",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalog-format.md",
+   "quote": "If none of the first 500 fetched images can be used, the job fails instead of embedding text only."
+  },
+  {
+   "id": "R2-F7",
+   "claim": "Each API key holds 2 catalogs; third upload refused until one is deleted",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalogs.md",
+   "quote": "Once both slots are in use, an upload under a new name is refused until you delete one of them."
+  },
+  {
+   "id": "R2-F8",
+   "claim": "Multi-catalog map limited to 5 catalogs",
+   "url": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalog-format.md",
+   "quote": "`client.umap(catalog_ids=[...])` draws one map of several catalogs instead, one colour each, at most 5 of them."
+  },
+  {
+   "id": "R2-F9",
+   "claim": "Key shown on screen at signup and emailed; new key or catalog upload via portal login with same email",
+   "url": "https://unboxai.com/behaviorgpt/overview",
+   "quote": "To get a new key or upload your own catalog, sign in at portal.unboxai.com with the same email."
+  },
+  {
+   "id": "R2-F10",
+   "claim": "Full catalog ranked in one forward pass (latency claim)",
+   "url": "https://unboxai.com/behaviorgpt/overview",
+   "quote": "BehaviorGPT reads the event sequence directly and ranks a whole catalogue in one forward pass."
+  },
+  {
+   "id": "R2-F11",
+   "claim": "Terms permit rate limiting and key revocation; no numeric limit published",
+   "url": "https://portal.unboxai.com/terms/",
+   "quote": "We may limit how many requests a key makes, and we may revoke a key that is misused."
+  },
+  {
+   "id": "R2-F12",
+   "claim": "Terms: API keys are server-side only",
+   "url": "https://portal.unboxai.com/terms/",
+   "quote": "Keep API keys secret: use them only on your servers, never in a page or an app."
+  },
+  {
+   "id": "R2-F13",
+   "claim": "Terms: acceptable use bars harm, deception, tracking or discrimination of people (matters for manipulation-style demos)",
+   "url": "https://portal.unboxai.com/terms/",
+   "quote": "use the Services against the law, or to harm, deceive, track or discriminate against people;"
+  },
+  {
+   "id": "R2-F14",
+   "claim": "Anomaly-detection app scores each shopping session step with no labels; flags risk barrier crossing",
+   "url": "https://github.com/Unbox-AI/behaviorgpt-anomaly",
+   "quote": "It flags the step where a session crosses a calibrated risk barrier and names the items that pushed it there."
+  },
+  {
+   "id": "R2-F15",
+   "claim": "Art recommender demo uses 19,000 public-domain artworks with BehaviorGPT as curator",
+   "url": "https://github.com/Unbox-AI/aic-artworks",
+   "quote": "Browse 19,000 public-domain artworks from the Art Institute of Chicago with BehaviorGPT as the curator."
+  },
+  {
+   "id": "R2-F16",
+   "claim": "v4 benchmark claim: 30 of 31 dataset-task pairs zero-shot, sub-millisecond catalog ranking",
+   "url": "https://research.unboxai.com",
+   "quote": "leads on 30 of 31 dataset\u2013task pairs zero-shot, and ranks a full catalog in under a millisecond per query."
+  },
+  {
+   "id": "R2-F17",
+   "claim": "Company zero-shot claim vs baselines trained on up to 2.7M samples",
+   "url": "https://unboxai.com",
+   "quote": "Zero-shot, it beats every baseline trained on up to 2.7 million samples of the target data."
+  },
+  {
+   "id": "R2-F18",
+   "claim": "Company claims double-digit sales lift in production A/B tests; no customers named",
+   "url": "https://unboxai.com",
+   "quote": "In production A/B tests, BehaviorGPT models have increased sales by double-digit percentages against incumbent systems."
+  }
+ ],
+ "projects": [
+  {
+   "id": "R2-P1",
+   "name": "Unbox-AI/behaviorgpt (Python SDK)",
+   "url": "https://github.com/Unbox-AI/behaviorgpt",
+   "what": "pip install behaviorgpt; Python 3.11+; env UNBOXAI_API_KEY; client.shop, complete, MCP, widgets",
+   "kind": "repo",
+   "license": "MIT",
+   "traction": "17 stars, 1 fork, 137 commits (github.com/Unbox-AI/behaviorgpt, read 2026-11-08)",
+   "date": "2026-11-07"
+  },
+  {
+   "id": "R2-P2",
+   "name": "aic-artworks / Curate my wall",
+   "url": "https://aic-artworks.streamlit.app/",
+   "what": "Streamlit art recommender: 19k Art Institute of Chicago works, taste map, Fashion for you tab",
+   "kind": "demo",
+   "license": "MIT (code)",
+   "traction": "0 stars (github.com/Unbox-AI/aic-artworks)",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "R2-P3",
+   "name": "behaviorgpt-anomaly",
+   "url": "https://github.com/Unbox-AI/behaviorgpt-anomaly",
+   "what": "FastAPI app: per-step session likelihood, risk barrier, next-action and odd-click endpoints",
+   "kind": "repo",
+   "license": "MIT",
+   "traction": "0 stars (read 2026-11-08)",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "R2-P4",
+   "name": "behaviorgpt-reproduce",
+   "url": "https://github.com/Unbox-AI/behaviorgpt-reproduce",
+   "what": "Notebook reproducing zero-shot PixelRec results via API; 79,399 calls full run, 5,000 default",
+   "kind": "repo",
+   "license": "MIT",
+   "traction": "0 stars (read 2026-11-08)",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "R2-P5",
+   "name": "BehaviorGPT-v4 paper",
+   "url": "https://research.unboxai.com/behaviorgpt-v4-one-large-behavioral-model.pdf",
+   "what": "12.5B-param model, 150B actions (paraphrase from research index; PDF over fetch size limit, not read)",
+   "kind": "paper",
+   "traction": "n/a",
+   "date": "2026-10-08"
+  },
+  {
+   "id": "R2-P6",
+   "name": "Unbox research index",
+   "url": "https://research.unboxai.com",
+   "what": "Six papers 2025-2026 incl. scaling laws (2026-06-03), visual art (2025-07-15), workforce actions (2025-06-26), JPMorgan talk (2026-08-27)",
+   "kind": "paper",
+   "traction": "n/a",
+   "date": "2026-10-08"
+  },
+  {
+   "id": "R2-P7",
+   "name": "Unbox Behavioral Shopping Demo (storefront)",
+   "url": "https://behaviorgpt.unboxai.com",
+   "what": "Official storefront demo; page text was JS shell, contents unread",
+   "kind": "demo",
+   "traction": "n/a"
+  }
+ ],
+ "idea_seeds": [
+  {
+   "title": "Taste map of anything",
+   "one_line": "Upload a non-product catalog (e.g. songs, memes, places) and show the user's live taste map moving as they tap",
+   "fact_ids": [
+    "R2-F5",
+    "R2-F8",
+    "R2-F15"
+   ],
+   "phone_moment": "Tap 5 items and watch your dot move across a colored map while the next-pick shelf reshuffles"
+  },
+  {
+   "title": "Bot or human click-curve",
+   "one_line": "Let people click through a store and watch a live risk curve show how unlikely each step is, then try to fool it",
+   "fact_ids": [
+    "R2-F14",
+    "R2-F10"
+   ],
+   "phone_moment": "Risk line spikes red on the exact odd click, with the item names that caused it"
+  },
+  {
+   "title": "Predict me vs me",
+   "one_line": "Model guesses your next click before you make it; show running hit-rate as a public scoreboard",
+   "fact_ids": [
+    "R2-F10",
+    "R2-F16"
+   ],
+   "phone_moment": "A banner reads 'It predicted that tap' with a live accuracy percentage after 10 taps"
+  },
+  {
+   "title": "Behavior fingerprint card",
+   "one_line": "Shareable card showing how predictable you are from a short session, using ranked next-actions",
+   "fact_ids": [
+    "R2-F4",
+    "R2-F13"
+   ],
+   "phone_moment": "A shareable predictability score card appears after a 15-second tap session"
+  }
+ ],
+ "gaps": [
+  "No earlier hackathon projects built with BehaviorGPT or Unbox AI found (AGI House, Devpost, Luma not located)",
+  "HTTP auth header and REST base URL beyond https://portal.unboxai.com/api/v1/shop/ not confirmed",
+  "MCP server package name and tool list not found; README gives no setup",
+  "Widget embed snippet not found; portal /docs/ and /how-it-works/ were JS shells",
+  "Store-link import flow not documented in fetched pages",
+  "Pricing: only 'free during early access' (too short to quote); no numeric rate limits",
+  "Whether non-product items beyond artworks work: artworks confirmed, game moves/screens not documented",
+  "Funding unverified (Crunchbase/CB Insights list pre-seed per search snippet; founding year conflicts: site FAQ says 2019, aggregators say 2022)",
+  "Data retention terms only partially seen; public-demo terms not addressed"
+ ],
+ "lessons": [
+  "Portal and docs subdomain are client-rendered; WebFetch returns only nav, so use the GitHub repo docs/ folder (raw.githubusercontent.com) as the real developer docs",
+  "Raw GitHub README fetches return quotable prose; github.com HTML pages return summaries",
+  "Search engines index nothing on Unbox AI hackathons; go to organizer pages directly"
+ ],
+ "viral_evidence": []
+}

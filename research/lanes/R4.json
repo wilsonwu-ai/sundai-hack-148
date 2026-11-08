@@ -1,0 +1,114 @@
+{
+ "lane": "R4",
+ "facts": [
+  {
+   "id": "R4-F1",
+   "claim": "AI21 Human or Not reported over 15 million conversations in about 2 months",
+   "url": "https://www.ai21.com/blog/human-or-not-results",
+   "quote": "Since its launch in mid-April, more than 15 million conversations have been conducted in \"Human or Not?\"",
+   "date": "2023"
+  },
+  {
+   "id": "R4-F2",
+   "claim": "Human or Not: 68% of players guessed human vs bot correctly, so a third were fooled",
+   "url": "https://www.ai21.com/blog/human-or-not-results",
+   "quote": "68% of people guessed correctly when asked to determine whether they talked to a fellow human or an AI bot.",
+   "date": "2023"
+  },
+  {
+   "id": "R4-F3",
+   "claim": "Aaronson Oracle mechanic: type random f/d keys, oracle predicts the next key, live rolling accuracy shown",
+   "url": "https://people.ischool.berkeley.edu/~nick/aaronson-oracle/",
+   "quote": "Press the 'f' and 'd' keys randomly. As randomly as you can. I'll try to predict which key you'll press next."
+  },
+  {
+   "id": "R4-F4",
+   "claim": "Aaronson reported 70-80% prediction of people trying to type randomly (his own claim, not independently tested)",
+   "url": "https://github.com/elsehow/aaronson-oracle",
+   "quote": "I challenged people to try this and the program was getting between 70% and 80% prediction rates."
+  },
+  {
+   "id": "R4-F5",
+   "claim": "Psych-101 is Apache-2.0 with 10.7M human choices from 60k participants",
+   "url": "https://huggingface.co/datasets/marcelbinz/Psych-101",
+   "quote": "It comprises trial-by-trial data from 160 psychological experiments and 60,092 participants, making 10,681,650 choices."
+  },
+  {
+   "id": "R4-F6",
+   "claim": "Centaur is a human-behavior predictor but 70B and not browser-runnable (Llama 3.1 license, needs 2+ 80GB GPUs)",
+   "url": "https://huggingface.co/marcelbinz/Llama-3.1-Centaur-70B",
+   "quote": "Llama-3.1-Centaur-70B is a foundation model of cognition model that can predict and simulate human behavior"
+  },
+  {
+   "id": "R4-F7",
+   "claim": "MovieLens 100K is a small stable sequence-ish benchmark; license not on page, defer to README, redistribution restricted",
+   "url": "https://grouplens.org/datasets/movielens/",
+   "quote": "MovieLens 100K movie ratings. Stable benchmark dataset. 100,000 ratings from 1000 users on 1700 movies."
+  },
+  {
+   "id": "R4-F8",
+   "claim": "MovieLens usage terms are per-README, not a stated permissive license",
+   "url": "https://grouplens.org/datasets/movielens/",
+   "quote": "Before using these data sets, please review their README files for the usage licenses and other details."
+  },
+  {
+   "id": "R4-F9",
+   "claim": "Simile builds an AI simulation of society from real-human-based agents",
+   "url": "https://www.simile.com/blog/the-simulation-company",
+   "quote": "At Simile, we have built the first AI simulation of society, populated by agents based on real humans."
+  },
+  {
+   "id": "R4-F10",
+   "claim": "Simile has $100M funding led by Index Ventures",
+   "url": "https://www.simile.com/blog/the-simulation-company",
+   "quote": "We are backed by $100M in funding led by Index Ventures."
+  },
+  {
+   "id": "R4-F11",
+   "claim": "Aaru sells behavior simulation positioned as more accurate than surveys; no funding on page",
+   "url": "https://www.aaru.com",
+   "quote": "Aaru leverages measurable outcomes and actions to become more accurate than any survey or traditional research."
+  },
+  {
+   "id": "R4-F12",
+   "claim": "Artificial Societies sells audience-response simulation to consultancies; 3m+ persona library; no funding on page",
+   "url": "https://societies.ai/",
+   "quote": "What we were able to accomplish with Artificial Societies would simply have been impossible with traditional market research"
+  },
+  {
+   "id": "R4-F13",
+   "claim": "Joon Park's generative_agents repo, the canonical believable-behavior simulator (22.4k stars, Apache-2.0)",
+   "url": "https://github.com/joonspk-research/generative_agents",
+   "quote": "It contains our core simulation module for generative agents\u2014computational agents that simulate believable human behaviors."
+  },
+  {
+   "id": "R4-F14",
+   "claim": "Byron Knoll's RPS demo runs an LSTM in the browser to predict your next throw",
+   "url": "http://www.byronknoll.com/lstm.html",
+   "quote": "This rock paper scissors AI uses LSTM to predict your next move."
+  },
+  {
+   "id": "R4-F15",
+   "claim": "A 2019 JS-only RPS next-move predictor already exists on dev.to (prior art, 2019)",
+   "url": "https://dev.to/victorqribeiro/can-a-neural-network-predict-your-next-move-on-a-game-of-rock-paper-and-scissors-2kgg",
+   "quote": "It works by storing your last moves and trying to predict your next ones. The experiment is in JavaScript",
+   "date": "2019-03-16"
+  },
+  {
+   "id": "R4-F16",
+   "claim": "Meta HSTU is open-source sequential next-action recommender (2.0k stars, Apache-2.0)",
+   "url": "https://github.com/facebookresearch/generative-recommenders",
+   "quote": "propose efficient algorithms such as HSTU and M-FALCON to accelerate training and inference for large-scale sequential models"
+  },
+  {
+   "id": "R4-F17",
+   "claim": "Akinator mechanic: guesses what the player is thinking of (launched Aug 2007 per infobox)",
+   "url": "https://en.wikipedia.org/wiki/Akinator",
+   "quote": "it attempts to determine what media or real-life character, object, or animal the player is thinking of",
+   "date": "2007"
+  }
+ ],
+ "projects": [],
+ "idea_seeds": [],
+ "viral_evidence": []
+}

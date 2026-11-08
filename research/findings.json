@@ -1,0 +1,487 @@
+{
+ "findings": [
+  {
+   "id": "R1-F1",
+   "sourceUrl": "https://arxiv.org/abs/2402.17152",
+   "quote": "HSTU outperforms baselines over synthetic and public datasets by up to 65.8% in NDCG, and is 5.3x to 15.2x faster",
+   "claim": "HSTU (Meta, 2024) beats baselines by up to 65.8% NDCG and is 5.3x to 15.2x faster (achieved, offline benchmarks).",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F2",
+   "sourceUrl": "https://arxiv.org/abs/2402.17152",
+   "quote": "HSTU-based Generative Recommenders, with 1.5 trillion parameters, improve metrics in online A/B tests by 12.4%",
+   "claim": "Meta's 1.5T-parameter HSTU generative recommenders improved online A/B metrics by 12.4% (achieved, production).",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F3",
+   "sourceUrl": "https://arxiv.org/abs/2402.17152",
+   "quote": "the model quality of Generative Recommenders empirically scales as a power-law of training compute",
+   "claim": "Generative recommender quality scales as a power-law of training compute, like LLMs.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F4",
+   "sourceUrl": "https://arxiv.org/abs/2410.20268",
+   "quote": "scale, covering trial-by-trial data from over 60,000 participants performing over 10,000,000 choices in 160 experiments",
+   "claim": "Centaur is trained on Psych-101: over 60,000 participants, over 10M choices, 160 experiments.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F5",
+   "sourceUrl": "https://arxiv.org/abs/2410.20268",
+   "quote": "Centaur not only captures the behavior of held-out participants better than existing cognitive models, but also generalizes",
+   "claim": "Centaur predicts held-out participants better than existing cognitive models (achieved, lab tasks only).",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F6",
+   "sourceUrl": "https://arxiv.org/abs/2411.10109",
+   "quote": "achieved accuracies equal to 83%, 82%, and 86% of participants' own two-week test-retest consistency benchmark",
+   "claim": "Park et al.: agents built from 2-hour interviews of 1,052 Americans (not 1,000) matched 83%/82%/86% of people's own 2-week test-retest consistency.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F7",
+   "sourceUrl": "https://arxiv.org/abs/2411.10109",
+   "quote": "Using data from a diverse national sample of 1,052 Americans, we built agents from (i) two-hour, semi-structured interviews",
+   "claim": "Park et al. sample size is 1,052, built from interviews.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F8",
+   "sourceUrl": "https://arxiv.org/abs/2505.17479",
+   "quote": "survey a representative sample of N = 2,058 participants (average 2.42 hours per person) in the US across four waves",
+   "claim": "Twin-2K-500 digital-twin dataset: 2,058 US participants, 500 questions, four waves; authors report only early quality checks.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F9",
+   "sourceUrl": "https://arxiv.org/abs/2306.03009",
+   "quote": "the most comprehensive registry data in existence, available for an entire nation of more than six million individuals",
+   "claim": "life2vec used national registry data on more than six million people.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F10",
+   "sourceUrl": "https://arxiv.org/abs/2306.03009",
+   "quote": "Our models allow us to predict diverse outcomes ranging from early mortality to personality nuances",
+   "claim": "life2vec claims prediction from early mortality to personality nuances (no accuracy number in abstract).",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F11",
+   "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "the best predictions were not very accurate and were only slightly better than those from a simple benchmark model",
+   "claim": "Fragile Families Challenge: 160 teams, best predictions of life outcomes only slightly better than a simple benchmark (achieved accuracy low).",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F12",
+   "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "160 teams built predictive models for six life outcomes using data from the Fragile Families and Child Wellbeing Study",
+   "claim": "Fragile Families: 160 teams built models for six life outcomes.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F13",
+   "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20167789&retmode=text&rettype=abstract",
+   "quote": "By measuring the entropy of each individual's trajectory, we find a 93% potential predictability in user mobility",
+   "claim": "Song et al. 2010: entropy gives 93% POTENTIAL predictability of mobility (an upper bound, not achieved model accuracy).",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F14",
+   "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20167789&retmode=text&rettype=abstract",
+   "quote": "we find a remarkable lack of variability in predictability, which is largely independent of the distance users cover",
+   "claim": "Song et al.: predictability barely varies between people.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F15",
+   "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "computer predictions based on a generic digital footprint (Facebook Likes) are more accurate (r = 0.56) than those made by the participants' Facebook friends using a personality questionnaire (r = 0.49)",
+   "claim": "Youyou et al. 2015: computer judgments from Likes beat Facebook friends' judgments (r=0.56 vs 0.49); personality traits, not next actions.",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F16",
+   "sourceUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "the outcome of a decision can be encoded in brain activity of prefrontal and parietal cortex up to 10 s",
+   "claim": "Soon et al. 2008: brain activity encodes a simple free choice outcome up to 10 s before awareness (lab button-press task, above-chance not certain).",
+   "lane": "R1"
+  },
+  {
+   "id": "R1-F17",
+   "sourceUrl": "https://people.ischool.berkeley.edu/~nick/aaronson-oracle/",
+   "quote": "Press the 'f' and 'd' keys randomly. As randomly as you can. I'll try to predict which key you'll press next.",
+   "claim": "Aaronson Oracle (Berkeley web version): you press f and d 'randomly' and it guesses your next key with a live rolling accuracy.",
+   "lane": "R1"
+  },
+  {
+   "id": "R2-F1",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "This repository holds the Python SDK for the Unbox AI API and a notebook that walks through the model step by step.",
+   "claim": "Official Python SDK exists; repo holds SDK plus a walkthrough notebook",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F2",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "On a page or in an app, where your API key must never go, the widgets make the same calls with a publishable key.",
+   "claim": "Widgets use a publishable key so the secret key stays off pages and apps",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F3",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "The portal's JSON uses the same names (catalog_id, user_id, user, item_id, item_ids), as do the widgets and the MCP server.",
+   "claim": "MCP server exists and shares naming with portal JSON and widgets (no tool list found)",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F4",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/README.md",
+   "quote": "The model can only return items it knows about (a history can still hold items outside your catalogs).",
+   "claim": "Model can only return items in a catalog it knows; the action vocabulary is the uploaded catalog",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F5",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalog-format.md",
+   "quote": "Embedding and every query work the same at any size; only the map is skipped.",
+   "claim": "Items need not be products; artworks used as proof (title as name, artist as brand, views for sales)",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F6",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalog-format.md",
+   "quote": "If none of the first 500 fetched images can be used, the job fails instead of embedding text only.",
+   "claim": "Catalog upload needs at least id, name, event_type=product, group=product; rest may be null (title-only embedding). Quote is a related limit.",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F7",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalogs.md",
+   "quote": "Once both slots are in use, an upload under a new name is refused until you delete one of them.",
+   "claim": "Each API key holds 2 catalogs; third upload refused until one is deleted",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F8",
+   "sourceUrl": "https://raw.githubusercontent.com/Unbox-AI/behaviorgpt/main/docs/catalog-format.md",
+   "quote": "`client.umap(catalog_ids=[...])` draws one map of several catalogs instead, one colour each, at most 5 of them.",
+   "claim": "Multi-catalog map limited to 5 catalogs",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F9",
+   "sourceUrl": "https://unboxai.com/behaviorgpt/overview",
+   "quote": "To get a new key or upload your own catalog, sign in at portal.unboxai.com with the same email.",
+   "claim": "Key shown on screen at signup and emailed; new key or catalog upload via portal login with same email",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F10",
+   "sourceUrl": "https://unboxai.com/behaviorgpt/overview",
+   "quote": "BehaviorGPT reads the event sequence directly and ranks a whole catalogue in one forward pass.",
+   "claim": "Full catalog ranked in one forward pass (latency claim)",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F11",
+   "sourceUrl": "https://portal.unboxai.com/terms/",
+   "quote": "We may limit how many requests a key makes, and we may revoke a key that is misused.",
+   "claim": "Terms permit rate limiting and key revocation; no numeric limit published",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F12",
+   "sourceUrl": "https://portal.unboxai.com/terms/",
+   "quote": "Keep API keys secret: use them only on your servers, never in a page or an app.",
+   "claim": "Terms: API keys are server-side only",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F13",
+   "sourceUrl": "https://portal.unboxai.com/terms/",
+   "quote": "use the Services against the law, or to harm, deceive, track or discriminate against people;",
+   "claim": "Terms: acceptable use bars harm, deception, tracking or discrimination of people (matters for manipulation-style demos)",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F14",
+   "sourceUrl": "https://github.com/Unbox-AI/behaviorgpt-anomaly",
+   "quote": "It flags the step where a session crosses a calibrated risk barrier and names the items that pushed it there.",
+   "claim": "Anomaly-detection app scores each shopping session step with no labels; flags risk barrier crossing",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F15",
+   "sourceUrl": "https://github.com/Unbox-AI/aic-artworks",
+   "quote": "Browse 19,000 public-domain artworks from the Art Institute of Chicago with BehaviorGPT as the curator.",
+   "claim": "Art recommender demo uses 19,000 public-domain artworks with BehaviorGPT as curator",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F16",
+   "sourceUrl": "https://research.unboxai.com",
+   "quote": "leads on 30 of 31 dataset\u2013task pairs zero-shot, and ranks a full catalog in under a millisecond per query.",
+   "claim": "v4 benchmark claim: 30 of 31 dataset-task pairs zero-shot, sub-millisecond catalog ranking",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F17",
+   "sourceUrl": "https://unboxai.com",
+   "quote": "Zero-shot, it beats every baseline trained on up to 2.7 million samples of the target data.",
+   "claim": "Company zero-shot claim vs baselines trained on up to 2.7M samples",
+   "lane": "R2"
+  },
+  {
+   "id": "R2-F18",
+   "sourceUrl": "https://unboxai.com",
+   "quote": "In production A/B tests, BehaviorGPT models have increased sales by double-digit percentages against incumbent systems.",
+   "claim": "Company claims double-digit sales lift in production A/B tests; no customers named",
+   "lane": "R2"
+  },
+  {
+   "id": "R3-F1",
+   "sourceUrl": "https://stefanpoulos.substack.com/p/i-built-an-ai-version-of-myself-heres",
+   "quote": "People have said some version of \u201cI love how your brain works\u201d to me more times than I can count.",
+   "claim": "Apr 2026 Substack: Poulos built an AI version of himself from four years of Claude chats (persona markdown files).",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F2",
+   "sourceUrl": "https://exploringchatgpt.substack.com/p/the-algorithmic-self",
+   "quote": "Are we truly autonomous decision-makers? Can AI guide us to better choices, or does it subtly manipulate our behavior?",
+   "claim": "Mar 2025 Substack frames the 'AI knows me better' worry as an autonomy and manipulation question.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F3",
+   "sourceUrl": "https://exploringchatgpt.substack.com/p/the-algorithmic-self",
+   "quote": "brain activity predicting a decision occurred several seconds before participants reported consciously making a choice",
+   "claim": "Same post leans on Libet to argue prediction may precede conscious choice (free-will angle).",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F4",
+   "sourceUrl": "https://exploringchatgpt.substack.com/p/choice-doesnt-start-with-you",
+   "quote": "Life is no longer something you initiate first. It is something you select from. And that changes what choice actually means.",
+   "claim": "Jan 2026 Substack: recommendations mean choice starts as a suggestion, not an initiation (paywalled after intro).",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F5",
+   "sourceUrl": "https://aicentral.substack.com/p/ai-and-behavioral-pattern-recognition",
+   "quote": "In many scenarios, SSH-AI will know what you are going to do before you do it.",
+   "claim": "Jul 2025 Substack (Vox Day) makes the blunt 'it knows before you do' claim; ~55 likes, 19 comments (unlabeled counts).",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F6",
+   "sourceUrl": "https://www.verasight.io/reports/can-ai-digital-twins-replace-human-respondents",
+   "quote": "On newer or lower-profile questions it was off by as much as 12.8 points, roughly seven times worse.",
+   "claim": "Jun 2026 Verasight: AI digital twins missed lower-profile poll questions by up to 12.8 points.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F7",
+   "sourceUrl": "https://www.verasight.io/reports/can-ai-digital-twins-replace-human-respondents",
+   "quote": "THESEUS came within 2.1 points of a real poll on Trump approval and 1.8 points on the generic ballot.",
+   "claim": "Same Verasight report: twins matched polls on famous questions (2.1 and 1.8 points off), so they look right where it is easy.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F8",
+   "sourceUrl": "https://every.to/chain-of-thought/simulating-one-way-door-decisions-with-ai",
+   "quote": "It allows you to try on a decision like you would a piece of clothing.",
+   "claim": "2024 Every essay: Dan Shipper simulated his own future journal entries in Claude to test a funding decision.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F9",
+   "sourceUrl": "https://10xinsights.substack.com/p/synthetic-respondents-and-digital-e18",
+   "quote": "Sometimes it works, sometimes it doesn't. The bad news is that we don't know in advance which will work.",
+   "claim": "2024 Substack on synthetic respondents: results are mixed and unpredictable in advance (2024, older item).",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F10",
+   "sourceUrl": "https://www.latent.space/p/simile",
+   "quote": "we could replicate people's behaviors and attitudes 85 percent as accurately as people would replicate their own.",
+   "claim": "Latent Space (Substack) interview with Simile CEO cites the 85% self-replication benchmark for 1,000-person agents.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F11",
+   "sourceUrl": "https://www.latent.space/p/simile",
+   "quote": "what these models are really good at today is they're trying to become the super rational, objective machines.",
+   "claim": "Park's critique: frontier LLMs act like rational machines, a bad model of real people.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F12",
+   "sourceUrl": "https://www.latent.space/p/simile",
+   "quote": "not just what people say they do online, but what they do in real life.",
+   "claim": "Park's 'say vs do' angle: models learned online self-report, not real-life behavior.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F13",
+   "sourceUrl": "https://arxiv.org/abs/2603.28944",
+   "quote": "Over 40% of participants treated AI as such a predictive authority about their own behavior",
+   "claim": "arXiv 2026 (1,305 people, Newcomb-style): many people treat AI as authority on their own behavior.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F14",
+   "sourceUrl": "https://arxiv.org/abs/2603.28944",
+   "quote": "the mere presence of AI predictions may shape their decision-making, narrowing the futures they consider",
+   "claim": "Same paper: AI predictions alone can steer choices, even narrowing options people consider.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F15",
+   "sourceUrl": "https://zeli.app/story/50074909",
+   "quote": "After a 10-number warm-up, your final score compares you to 206 people from a psychology study.",
+   "claim": "Oct 2026 'Rigged Draw' Show HN toy (AI guesses your 1-9 picks, scores you vs 206 people): 209 points, 116 comments on mirror page.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F16",
+   "sourceUrl": "https://thebulletin.org/2025/08/how-ai-and-surveillance-capitalism-are-undermining-democracy",
+   "quote": "What makes AI prediction both powerful and lucrative is being able to control what happens next.",
+   "claim": "Aug 2025 Bulletin essay: the 'prediction is control' angle.",
+   "lane": "R3"
+  },
+  {
+   "id": "R3-F17",
+   "sourceUrl": "https://battle4cog.substack.com/p/algorithmic-governance",
+   "quote": "States and corporations no longer wait to respond to public demand or dissent; they anticipate it.",
+   "claim": "Nov 2025 Substack: anticipation replaces response as the mode of control.",
+   "lane": "R3"
+  },
+  {
+   "id": "R4-F1",
+   "sourceUrl": "https://www.ai21.com/blog/human-or-not-results",
+   "quote": "Since its launch in mid-April, more than 15 million conversations have been conducted in \"Human or Not?\"",
+   "claim": "AI21 Human or Not reported over 15 million conversations in about 2 months",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F2",
+   "sourceUrl": "https://www.ai21.com/blog/human-or-not-results",
+   "quote": "68% of people guessed correctly when asked to determine whether they talked to a fellow human or an AI bot.",
+   "claim": "Human or Not: 68% of players guessed human vs bot correctly, so a third were fooled",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F3",
+   "sourceUrl": "https://people.ischool.berkeley.edu/~nick/aaronson-oracle/",
+   "quote": "Press the 'f' and 'd' keys randomly. As randomly as you can. I'll try to predict which key you'll press next.",
+   "claim": "Aaronson Oracle mechanic: type random f/d keys, oracle predicts the next key, live rolling accuracy shown",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F4",
+   "sourceUrl": "https://github.com/elsehow/aaronson-oracle",
+   "quote": "I challenged people to try this and the program was getting between 70% and 80% prediction rates.",
+   "claim": "Aaronson reported 70-80% prediction of people trying to type randomly (his own claim, not independently tested)",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F5",
+   "sourceUrl": "https://huggingface.co/datasets/marcelbinz/Psych-101",
+   "quote": "It comprises trial-by-trial data from 160 psychological experiments and 60,092 participants, making 10,681,650 choices.",
+   "claim": "Psych-101 is Apache-2.0 with 10.7M human choices from 60k participants",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F6",
+   "sourceUrl": "https://huggingface.co/marcelbinz/Llama-3.1-Centaur-70B",
+   "quote": "Llama-3.1-Centaur-70B is a foundation model of cognition model that can predict and simulate human behavior",
+   "claim": "Centaur is a human-behavior predictor but 70B and not browser-runnable (Llama 3.1 license, needs 2+ 80GB GPUs)",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F7",
+   "sourceUrl": "https://grouplens.org/datasets/movielens/",
+   "quote": "MovieLens 100K movie ratings. Stable benchmark dataset. 100,000 ratings from 1000 users on 1700 movies.",
+   "claim": "MovieLens 100K is a small stable sequence-ish benchmark; license not on page, defer to README, redistribution restricted",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F8",
+   "sourceUrl": "https://grouplens.org/datasets/movielens/",
+   "quote": "Before using these data sets, please review their README files for the usage licenses and other details.",
+   "claim": "MovieLens usage terms are per-README, not a stated permissive license",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F9",
+   "sourceUrl": "https://www.simile.com/blog/the-simulation-company",
+   "quote": "At Simile, we have built the first AI simulation of society, populated by agents based on real humans.",
+   "claim": "Simile builds an AI simulation of society from real-human-based agents",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F10",
+   "sourceUrl": "https://www.simile.com/blog/the-simulation-company",
+   "quote": "We are backed by $100M in funding led by Index Ventures.",
+   "claim": "Simile has $100M funding led by Index Ventures",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F11",
+   "sourceUrl": "https://www.aaru.com",
+   "quote": "Aaru leverages measurable outcomes and actions to become more accurate than any survey or traditional research.",
+   "claim": "Aaru sells behavior simulation positioned as more accurate than surveys; no funding on page",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F12",
+   "sourceUrl": "https://societies.ai/",
+   "quote": "What we were able to accomplish with Artificial Societies would simply have been impossible with traditional market research",
+   "claim": "Artificial Societies sells audience-response simulation to consultancies; 3m+ persona library; no funding on page",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F13",
+   "sourceUrl": "https://github.com/joonspk-research/generative_agents",
+   "quote": "It contains our core simulation module for generative agents\u2014computational agents that simulate believable human behaviors.",
+   "claim": "Joon Park's generative_agents repo, the canonical believable-behavior simulator (22.4k stars, Apache-2.0)",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F14",
+   "sourceUrl": "http://www.byronknoll.com/lstm.html",
+   "quote": "This rock paper scissors AI uses LSTM to predict your next move.",
+   "claim": "Byron Knoll's RPS demo runs an LSTM in the browser to predict your next throw",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F15",
+   "sourceUrl": "https://dev.to/victorqribeiro/can-a-neural-network-predict-your-next-move-on-a-game-of-rock-paper-and-scissors-2kgg",
+   "quote": "It works by storing your last moves and trying to predict your next ones. The experiment is in JavaScript",
+   "claim": "A 2019 JS-only RPS next-move predictor already exists on dev.to (prior art, 2019)",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F16",
+   "sourceUrl": "https://github.com/facebookresearch/generative-recommenders",
+   "quote": "propose efficient algorithms such as HSTU and M-FALCON to accelerate training and inference for large-scale sequential models",
+   "claim": "Meta HSTU is open-source sequential next-action recommender (2.0k stars, Apache-2.0)",
+   "lane": "R4"
+  },
+  {
+   "id": "R4-F17",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Akinator",
+   "quote": "it attempts to determine what media or real-life character, object, or animal the player is thinking of",
+   "claim": "Akinator mechanic: guesses what the player is thinking of (launched Aug 2007 per infobox)",
+   "lane": "R4"
+  }
+ ]
+}

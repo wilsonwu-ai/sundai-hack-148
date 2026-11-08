@@ -1,0 +1,97 @@
+id,name,brand,categories,image_url,event_type,group,sales_since,timestamp,frequency,market,price,currency,search_keywords,keywords
+fleece-throw,Fleece Throw,,"Home, Blankets",,product,product,,,,us,10.00,USD,,cozy
+vanilla-candle,Vanilla Candle,,"Home, Candles",,product,product,,,,us,25.00,USD,,cozy
+chamomile-tea,Chamomile Tea,,"Kitchen, Tea",,product,product,,,,us,60.00,USD,,cozy
+wool-slippers,Wool Slippers,,"Clothing, Slippers",,product,product,,,,us,150.00,USD,,cozy
+knit-mittens,Knit Mittens,,"Clothing, Gloves",,product,product,,,,us,10.00,USD,,cozy
+cocoa-mix,Cocoa Mix,,"Kitchen, Cocoa",,product,product,,,,us,25.00,USD,,cozy
+fuzzy-socks,Fuzzy Socks,,"Clothing, Socks",,product,product,,,,us,60.00,USD,,cozy
+flannel-pajamas,Flannel Pajamas,,"Clothing, Sleepwear",,product,product,,,,us,150.00,USD,,cozy
+cable-cardigan,Cable Cardigan,,"Clothing, Knitwear",,product,product,,,,us,10.00,USD,,cozy
+hot-water-bottle,Hot Water Bottle,,"Home, Warmers",,product,product,,,,us,25.00,USD,,cozy
+ceramic-teapot,Ceramic Teapot,,"Kitchen, Teapots",,product,product,,,,us,60.00,USD,,cozy
+fireside-logs,Fireside Logs,,"Home, Fireplace",,product,product,,,,us,150.00,USD,,cozy
+reading-lamp,Reading Lamp,,"Home, Lighting",,product,product,,,,us,10.00,USD,,cozy
+plush-cushion,Plush Cushion,,"Home, Cushions",,product,product,,,,us,25.00,USD,,cozy
+jigsaw-puzzle,Jigsaw Puzzle,,"Games, Puzzles",,product,product,,,,us,60.00,USD,,cozy
+paperback-novel,Paperback Novel,,"Books, Fiction",,product,product,,,,us,150.00,USD,,cozy
+trail-boots,Trail Boots,,"Outdoor, Footwear",,product,product,,,,us,10.00,USD,,adventure
+day-backpack,Day Backpack,,"Outdoor, Packs",,product,product,,,,us,25.00,USD,,adventure
+two-person-tent,Two-Person Tent,,"Outdoor, Camping",,product,product,,,,us,60.00,USD,,adventure
+trail-headlamp,Trail Headlamp,,"Outdoor, Lighting",,product,product,,,,us,150.00,USD,,adventure
+pocket-compass,Pocket Compass,,"Outdoor, Navigation",,product,product,,,,us,10.00,USD,,adventure
+passport-holder,Passport Holder,,"Travel, Documents",,product,product,,,,us,25.00,USD,,adventure
+carry-on-suitcase,Carry-On Suitcase,,"Travel, Luggage",,product,product,,,,us,60.00,USD,,adventure
+trekking-poles,Trekking Poles,,"Outdoor, Hiking",,product,product,,,,us,150.00,USD,,adventure
+camp-stove,Camp Stove,,"Outdoor, Cooking",,product,product,,,,us,10.00,USD,,adventure
+rain-jacket,Rain Jacket,,"Clothing, Outerwear",,product,product,,,,us,25.00,USD,,adventure
+sleeping-bag,Sleeping Bag,,"Outdoor, Sleep Gear",,product,product,,,,us,60.00,USD,,adventure
+steel-bottle,Steel Bottle,,"Outdoor, Hydration",,product,product,,,,us,150.00,USD,,adventure
+wide-brim-hat,Wide Brim Hat,,"Clothing, Hats",,product,product,,,,us,10.00,USD,,adventure
+kayak-paddle,Kayak Paddle,,"Outdoor, Water Sports",,product,product,,,,us,25.00,USD,,adventure
+travel-journal,Travel Journal,,"Travel, Journals",,product,product,,,,us,60.00,USD,,adventure
+field-binoculars,Field Binoculars,,"Outdoor, Optics",,product,product,,,,us,150.00,USD,,adventure
+wireless-earbuds,Wireless Earbuds,,"Electronics, Audio",,product,product,,,,us,10.00,USD,,tech
+phone-charger,Phone Charger,,"Electronics, Chargers",,product,product,,,,us,25.00,USD,,tech
+smart-watch,Smart Watch,,"Electronics, Wearables",,product,product,,,,us,60.00,USD,,tech
+clicky-keyboard,Clicky Keyboard,,"Electronics, Computer",,product,product,,,,us,150.00,USD,,tech
+gaming-mouse,Gaming Mouse,,"Electronics, Computer",,product,product,,,,us,10.00,USD,,tech
+portable-speaker,Portable Speaker,,"Electronics, Audio",,product,product,,,,us,25.00,USD,,tech
+power-bank,Power Bank,,"Electronics, Batteries",,product,product,,,,us,60.00,USD,,tech
+desk-webcam,Desk Webcam,,"Electronics, Cameras",,product,product,,,,us,150.00,USD,,tech
+laptop-sleeve,Laptop Sleeve,,"Electronics, Accessories",,product,product,,,,us,10.00,USD,,tech
+led-strip-lights,LED Strip Lights,,"Electronics, Smart Home",,product,product,,,,us,25.00,USD,,tech
+mini-drone,Mini Drone,,"Electronics, Drones",,product,product,,,,us,60.00,USD,,tech
+game-controller,Game Controller,,"Electronics, Gaming",,product,product,,,,us,150.00,USD,,tech
+e-reader,E-Reader,,"Electronics, Readers",,product,product,,,,us,10.00,USD,,tech
+cable-organizer,Cable Organizer,,"Electronics, Accessories",,product,product,,,,us,25.00,USD,,tech
+robot-vacuum,Robot Vacuum,,"Home, Gadgets",,product,product,,,,us,60.00,USD,,tech
+vr-headset,VR Headset,,"Electronics, Gaming",,product,product,,,,us,150.00,USD,,tech
+silk-scarf,Silk Scarf,,"Accessories, Scarves",,product,product,,,,us,10.00,USD,,luxe
+leather-wallet,Leather Wallet,,"Accessories, Wallets",,product,product,,,,us,25.00,USD,,luxe
+diamond-studs,Diamond Studs,,"Jewelry, Earrings",,product,product,,,,us,60.00,USD,,luxe
+signet-ring,Signet Ring,,"Accessories, Rings",,product,product,,,,us,150.00,USD,,luxe
+gilded-mirror,Gilded Mirror,,"Home, Mirrors",,product,product,,,,us,10.00,USD,,luxe
+truffle-oil,Truffle Oil,,"Food, Gourmet",,product,product,,,,us,25.00,USD,,luxe
+cashmere-sweater,Cashmere Sweater,,"Clothing, Knitwear",,product,product,,,,us,60.00,USD,,luxe
+silk-robe,Silk Robe,,"Clothing, Loungewear",,product,product,,,,us,150.00,USD,,luxe
+rose-perfume,Rose Perfume,,"Beauty, Fragrance",,product,product,,,,us,10.00,USD,,luxe
+fountain-pen,Fountain Pen,,"Stationery, Pens",,product,product,,,,us,25.00,USD,,luxe
+dress-watch,Dress Watch,,"Accessories, Watches",,product,product,,,,us,60.00,USD,,luxe
+aviator-shades,Aviator Shades,,"Accessories, Eyewear",,product,product,,,,us,150.00,USD,,luxe
+leather-tote,Leather Tote,,"Accessories, Bags",,product,product,,,,us,10.00,USD,,luxe
+crystal-flutes,Crystal Flutes,,"Home, Glassware",,product,product,,,,us,25.00,USD,,luxe
+opera-tickets,Opera Tickets,,"Experiences, Theatre",,product,product,,,,us,60.00,USD,,luxe
+gold-chain,Gold Chain,,"Jewelry, Necklaces",,product,product,,,,us,150.00,USD,,luxe
+yoga-mat,Yoga Mat,,"Fitness, Yoga",,product,product,,,,us,10.00,USD,,wellness
+resistance-bands,Resistance Bands,,"Fitness, Strength",,product,product,,,,us,25.00,USD,,wellness
+sleep-mask,Sleep Mask,,"Sleep, Masks",,product,product,,,,us,60.00,USD,,wellness
+face-moisturizer,Face Moisturizer,,"Skincare, Moisturizer",,product,product,,,,us,150.00,USD,,wellness
+gratitude-journal,Gratitude Journal,,"Mindfulness, Journals",,product,product,,,,us,10.00,USD,,wellness
+running-shoes,Running Shoes,,"Fitness, Running",,product,product,,,,us,25.00,USD,,wellness
+green-smoothie,Green Smoothie,,"Food, Smoothies",,product,product,,,,us,60.00,USD,,wellness
+essential-oils,Essential Oils,,"Self-Care, Aromatherapy",,product,product,,,,us,150.00,USD,,wellness
+massage-gun,Massage Gun,,"Recovery, Massage",,product,product,,,,us,10.00,USD,,wellness
+bath-salts,Bath Salts,,"Self-Care, Bath",,product,product,,,,us,25.00,USD,,wellness
+jump-rope,Jump Rope,,"Fitness, Cardio",,product,product,,,,us,60.00,USD,,wellness
+walking-pad,Walking Pad,,"Fitness, Cardio",,product,product,,,,us,150.00,USD,,wellness
+mineral-sunscreen,Mineral Sunscreen,,"Skincare, Sun Care",,product,product,,,,us,10.00,USD,,wellness
+mineral-water,Mineral Water,,"Drinks, Water",,product,product,,,,us,25.00,USD,,wellness
+dumbbell-set,Dumbbell Set,,"Fitness, Weights",,product,product,,,,us,60.00,USD,,wellness
+spin-bike,Spin Bike,,"Fitness, Cycling",,product,product,,,,us,150.00,USD,,wellness
+chocolate-truffles,Chocolate Truffles,,"Sweets, Chocolate",,product,product,,,,us,10.00,USD,,indulgent
+glazed-donuts,Glazed Donuts,,"Bakery, Donuts",,product,product,,,,us,25.00,USD,,indulgent
+ice-cream-pint,Ice Cream Pint,,"Frozen, Ice Cream",,product,product,,,,us,60.00,USD,,indulgent
+cheese-pizza,Cheese Pizza,,"Takeout, Pizza",,product,product,,,,us,150.00,USD,,indulgent
+loaded-fries,Loaded Fries,,"Takeout, Sides",,product,product,,,,us,10.00,USD,,indulgent
+double-burger,Double Burger,,"Takeout, Burgers",,product,product,,,,us,25.00,USD,,indulgent
+layer-cake,Layer Cake,,"Bakery, Cakes",,product,product,,,,us,60.00,USD,,indulgent
+gummy-bears,Gummy Bears,,"Sweets, Candy",,product,product,,,,us,150.00,USD,,indulgent
+swirl-lollipops,Swirl Lollipops,,"Sweets, Lollipops",,product,product,,,,us,10.00,USD,,indulgent
+buttery-popcorn,Buttery Popcorn,,"Snacks, Popcorn",,product,product,,,,us,25.00,USD,,indulgent
+fried-chicken,Fried Chicken,,"Takeout, Chicken",,product,product,,,,us,60.00,USD,,indulgent
+cookie-box,Cookie Box,,"Bakery, Cookies",,product,product,,,,us,150.00,USD,,indulgent
+boba-tea,Boba Tea,,"Drinks, Bubble Tea",,product,product,,,,us,10.00,USD,,indulgent
+soft-pretzel,Soft Pretzel,,"Food, Snacks",,product,product,,,,us,25.00,USD,,indulgent
+butter-croissant,Butter Croissant,,"Bakery, Pastry",,product,product,,,,us,60.00,USD,,indulgent
+street-tacos,Street Tacos,,"Takeout, Tacos",,product,product,,,,us,150.00,USD,,indulgent

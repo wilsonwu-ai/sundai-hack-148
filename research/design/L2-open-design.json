@@ -1,0 +1,29 @@
+{
+ "lens": "Evidence locker: forensic receipt look. Ink field, mono seals, one vermilion voice for the model, chalk for you. Sharp 4px corners, no gradients.",
+ "layout": "(a) Intro 390x844: safe 47, bar 56 (wordmark, 48px theme toggle), DEFY 160, hook 96, rules 56, ghost 2x2 plus sealed strip 208, Play 64, counter 28, gaps 3x24, bottom 57. (b) Round 2 turn: safe 47, header with 6 pips 64, prompt 80, grid 2 rows x 200 + 12 gap = 412, gap 20, sealed strip 112, hint plus safe 109. (c) Result first screen: headline 232, two chance-tick bars 120, predictability numeral 120, chips 56, Share 56, Replay and Challenge row 48. Verify seals, why-it-matters and footer sit below the fold. (d) Share 1080x1350, always dark: margins 72, bar 88, headline 440, numeral plus ticks 280, chips 112, card line 140, hook and url 88, gaps 58. The 1200x630 link card has the hook left and a 2x2 grid right with one badge and one sealed strip.",
+ "cards": "Item card 173x200, surface fill, 1.5px edge border, 72px emoji, 20px name, 12px mono outlined vibe chip. Press scales to 0.97 and the border goes chalk. Sealed card is a full-width 358x112 strip with a hatched edge and a solid plate under the mono \"sealed \u00b7 3f9a01c2\". It shows the hash only, with a \"verify\" link beside it, and in Round 2 it is labelled \"my guess if you defy\". The badge is a vermilion sticker tilted -3 degrees, pinned over the top-left corner of the argmax card. It reads \"I predict you'll pick this\" in 12px bold mono, and the card gets a 2px vermilion outline. The words carry the meaning, not the colour alone.",
+ "motion": "Flip reveal: the sealed strip rotates on X to 90 degrees in 180ms (ease-in), swaps to the receipt face (predicted emoji, salt, state word), then settles in 220ms. The state word lands as a stamp, scaling 1.3 to 1 in 120ms, with vibrate(15) where supported. Defy moment: when the tap is off the badge, the sticker peels (translateY -24, rotate 12, fade, 250ms) and the tapped card gets a chalk ring pulse of 300ms, then the strip flips to \"Called your defiance\" or \"Escaped\". On \"You obeyed\" the badge stays and the grid dims 12%. Reduced motion: no rotate, scale or vibrate. A 120ms opacity crossfade swaps the faces, stamps and peels appear instantly, and the state word changes in place.",
+ "type_scale": "Anton for display and numerals (self-hosted, canvas waits on document.fonts.ready), system-ui for body, mono for seals and labels. display 96/88, numeral 120/112 (card 220), h1 32/36, h2 24/28, body 17/24, ui 15/20, label mono 12/16 caps +0.08em. Share headline 64/72.",
+ "color_tokens": "Dark default: ink: #0C0D10, surface: #15171C, hairline: #2A2E36, edge: #5B616E, text: #F2EFE8, muted: #A3A8B3, model: #FF5A36, on-model: #0C0D10. Light: ink: #F4F1EA, surface: #FFFFFF, hairline: #DDD7CA, edge: #8A8577, text: #14151A, muted: #5A5E69, model: #B8321A, on-model: #FFFFFF. Contrast was computed by hand, not tooled: model on ink is about 6.3, light model on paper about 5.3, and edge on ink or paper is about 3.1 to 3.3.",
+ "signature_moves": [
+  "Hatched evidence-tape sealed strip with a mono hash that flips into a receipt",
+  "Two-voice colour: only the model speaks in vermilion (badge, guesses, stamps), you are chalk, and the sticker badge peels off when you defy",
+  "Score bars with a printed chance tick (25% and 33%), plus a giant Anton predictability numeral on the share card"
+ ],
+ "name_check": "Yes. DEFY at 280px with the hook in two 64px lines survives shrinking to a Sundai thumbnail, provided the 2x2 grid with its badge and sealed strip sits beside it to show the dare. No rename is needed. If the hook gets cut, the short form is \"It already guessed your next tap.\"",
+ "risks": [
+  "The sealed hash reads as decoration unless the verify link sits next to it, which costs trust",
+  "Canvas emoji differ by platform, and a missing glyph shows as tofu on the share card, so use the same emoji font for the preview and the render",
+  "A 6-line headline overflows the card, so it needs an autoshrink floor of 52px",
+  "The hatched pattern under the hash text lowers its contrast, so keep a solid plate beneath it",
+  "Chance ticks misread as targets, so label them \"chance\"",
+  "A bragging stamp on a random player's result undermines the honesty claim, so keep the toy-not-a-study footer on the share card too"
+ ],
+ "self_score": {
+  "clarity": 4,
+  "distinctiveness": 4,
+  "ten_second": 4
+ },
+ "notes": "The three od-* skill files are thin catalogue stubs. Only od-frontend-design carries a workflow, and I followed it: one committed direction, CSS tokens, an anti-slop check. I did not read wilson.md or run any tools to check the contrast values. I computed them by hand. I read only the four verified fact ids listed in the brief as relevant (S-4, R3-F13, R3-F14, S-10) and designed no copy for them beyond placement. incomplete is false.",
+ "incomplete": false
+}

@@ -1,0 +1,83 @@
+[
+ {
+  "ids": [
+   "R3-F13",
+   "R3-F13a"
+  ],
+  "group": "you",
+  "stat": "40%+",
+  "line": "of 1,305 people in a 2026 Newcomb's paradox study treated an AI as an authority on their own behavior.",
+  "source": "arXiv 2603.28944 (2026)",
+  "url": "https://arxiv.org/abs/2603.28944"
+ },
+ {
+  "ids": [
+   "R3-F14"
+  ],
+  "group": "you",
+  "stat": null,
+  "line": "The same study suggests that the mere presence of AI predictions may narrow the futures people consider. Round 2 puts you in that spot.",
+  "source": "arXiv 2603.28944 (2026)",
+  "url": "https://arxiv.org/abs/2603.28944"
+ },
+ {
+  "ids": [
+   "R1-F13"
+  ],
+  "group": "science",
+  "stat": "93%",
+  "line": "potential predictability of where people go, from the entropy of their movement trails. A ceiling, not a model's score.",
+  "source": "Song et al. 2010 (PubMed 20167789)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/20167789/"
+ },
+ {
+  "ids": [
+   "R4-F4"
+  ],
+  "group": "science",
+  "stat": "70-80%",
+  "line": "prediction rates reported for people trying to type at random against a simple program. The author's own report, not a study.",
+  "source": "Aaronson Oracle README",
+  "url": "https://github.com/elsehow/aaronson-oracle"
+ },
+ {
+  "ids": [
+   "S-1"
+  ],
+  "group": "machine",
+  "stat": "150B",
+  "line": "user actions behind BehaviorGPT-v4, a 12.5B-parameter Large Behavioral Model trained to predict the next event.",
+  "source": "Unbox AI, BehaviorGPT-v4 paper",
+  "url": "https://research.unboxai.com/behaviorgpt-v4-one-large-behavioral-model.pdf"
+ },
+ {
+  "ids": [
+   "S-4"
+  ],
+  "group": "machine",
+  "stat": null,
+  "line": "An LLM models how people describe the world. An LBM models how they act in it.",
+  "source": "Unbox AI, BehaviorGPT-v4 paper",
+  "url": "https://research.unboxai.com/behaviorgpt-v4-one-large-behavioral-model.pdf"
+ },
+ {
+  "ids": [
+   "R3-F16"
+  ],
+  "group": "stakes",
+  "stat": null,
+  "line": "What makes AI prediction both powerful and lucrative is being able to control what happens next.",
+  "source": "thebulletin.org essay, Aug 2025",
+  "url": "https://thebulletin.org/2025/08/how-ai-and-surveillance-capitalism-are-undermining-democracy"
+ },
+ {
+  "ids": [
+   "S-10"
+  ],
+  "group": "stakes",
+  "stat": null,
+  "line": "Predicting human actions touches on privacy, consent and power asymmetries between organizations and individuals.",
+  "source": "Unbox AI, BehaviorGPT-v4 paper",
+  "url": "https://research.unboxai.com/behaviorgpt-v4-one-large-behavioral-model.pdf"
+ }
+]

@@ -1,0 +1,28 @@
+{
+ "lens": "ui-ux-pro-max",
+ "layout": "(a) Intro 390x844: safe 44 | topbar (theme toggle, How it works) 48 | wordmark DEFY + hook 208 | hero 2x2 mini board, one card badged, sealed strip 216 | one-line rules 72 | Play 64 | live counter 40 (hidden when absent, space reserved) | safe 34; remaining 118 is 16px gutters. (b) Round 2 turn 390x844: safe 44 | header (Round 2 Defy, turn n/6, 6 pips) 56 | prompt 'Pick anything else, if you can.' 64 | 2x2 grid 428 (cards 169x208, 12 gap, 20 side margin) | gap 16 | sealed strip 96 | verdict slot 64 (reserved, no layout shift) | safe 34; 42 flex. (c) Result: safe 44 | headline 176 | two stat tiles (called, called defiance, each with chance bar) 120 | predictability meter 80 | trait chips 64 | sticky action bar 72 (Share primary, Replay, Challenge); below the fold: verify-seals row 56, why-it-matters panel (3 facts) ~420, footer 64. Desktop 1440: one 440px game column centred, science panel as a 360px right rail. (d) Share card 1080x1350, always rendered dark: margin 72 | brand strip 96 | 40 | headline 380 | 24 | 12-pip tape 280 | 24 | predictability % plus chance line 200 | 24 | chips 72 | footer (challenge URL, hook) 66 | margin 72. Link card 1200x630: left DEFY 220px plus hook at 52px, right 2x2 motif with badge and seal.",
+ "cards": "Item card 169x208, radius 20, surface fill, 2px line-strong border. Emoji 72px centred, name 20/600, vibe chip pill 24 high (13px caps). Press scale 0.97 within 100ms. After a tap the others dim to 0.45 opacity. Sealed card is a full-width 96px strip with a 2px dashed machine-red border and a drawn SVG wax-seal glyph (no emoji). Text is mono 'sealed \u00b7 3f9a01c2' with a 13px sub-label 'its guess, locked before you tap'. Only the hash exists in the DOM. After the flip it shows the item, the salt and a Verify link. 'I predict you'll pick this' badge is a 28px red pill pinned on the card's top edge (-14px). It has a target icon and dark text, and the card gets a 3px red outline plus crosshair corner ticks, so it reads without colour.",
+ "motion": "Tokens: tap 100ms, enter 180ms ease-out, exit 120ms ease-in, flip 420ms cubic-bezier(.2,.8,.2,1). Flip: the sealed strip rotates on X (180deg), the verdict stamps in (scale 1.15 to 1, 160ms) with icon plus word: Called it, Missed, Called your defiance, Escaped, You obeyed. Defy moment: a red strike line draws across the badged card (200ms, scaleX), that card dims and slips 4px, the tapped card lifts 1.04 with a bone outline, then the seal flips. Called your defiance lands a 140ms red thump. Escaped fires a mint ring (scale 1 to 1.3, opacity .6 to 0, 300ms). Input is never blocked and animations are interruptible. Reduced motion: no rotate, strike, ring or haptics. A 120ms opacity crossfade swaps the sealed face for the revealed face, the strike is a static line, and the verdict state is carried by icon, word and border style.",
+ "type_scale": "Display (Bricolage Grotesque 800, self-hosted, no CDN): wordmark 96/88 (desktop 160). Hook and h1 32/36. Result headline 28/32. h2 24/28. Card name 20/24 (600). Body 16/24. Small 14/20. Label 13/16 caps +0.04em (600). Seal text mono (JetBrains Mono) 18/24 tabular. Stat numerals 64/60 tabular. System fallback stack. Minimum text is 13px.",
+ "color_tokens": "DARK (default): bg: #0C0C10; surface: #17171D; surface-2: #22222B; line-subtle: #2A2A33; line-strong: #6C6C7A; text: #F4F1EA; text-muted: #A9A6B0; machine (accent): #FF5A3C; on-machine: #0C0C10; you: #5EE0A0. LIGHT: bg: #F6F3EC; surface: #FFFFFF; surface-2: #ECE8DE; line-subtle: #D9D4C7; line-strong: #77737F; text: #14131A; text-muted: #55525C; machine: #C93A1C; on-machine: #FFFFFF; you: #0F7A4E. Contrast computed by hand from the WCAG formula, not machine-verified, so QA must run a checker. All text and accent pairs come out at 4.7:1 or higher.",
+ "signature_moves": [
+  "Wax-seal receipt: the sealed strip is a dashed red envelope with a mono hash that flips open to the guess, so trust is visible before the tap.",
+  "Red is the machine, mint is you: the model's guess, seal, badge and 'Called' are always red, your escapes are always mint, always with an icon plus word.",
+  "The 12-pip tape: six Round 1 pips and six Round 2 pips (filled red = called, hollow mint = escaped, slashed = obeyed) is the result glyph and the hero of the share card and thumbnail."
+ ],
+ "name_check": "Yes, with one addition. DEFY at 220px plus the 52px hook reads in a small thumbnail, but alone it does not say 'playable game'. Add a 28px subline on the 1200x630 card, 'A 60-second game. It guesses your next tap.' Keep the name.",
+ "risks": [
+  "Emoji render differently on canvas (Apple vs Noto) and can clip or shift baseline; measure text and use a fixed font stack on the share card.",
+  "Red means 'bad' to many users, but here red is the machine's win; without the icon and word, Called it vs Escaped is ambiguous.",
+  "The hash looks fake unless Verify is one tap away after each flip; if verification is buried the seal reads as theatre.",
+  "The badge overlapping the card top edge can be clipped by grid overflow or the safe area; reserve 14px headroom.",
+  "A tiny live counter ('N players') undermines trust and the hook; hide it below a sensible n.",
+  "The predictability % can be read as a verdict on the person; keep the footer 'A toy, not a study' at 13px but never below AA contrast and visible on the share card too.",
+  "Dark-only share card in a light-theme session may surprise; it is intentional for thumbnail consistency."
+ ],
+ "self_score": {
+  "clarity": 4,
+  "distinctiveness": 4,
+  "ten_second": 4
+ }
+}

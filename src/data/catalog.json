@@ -1,0 +1,866 @@
+[
+  {
+    "id": "fleece-throw",
+    "name": "Fleece Throw",
+    "emoji": "🛋️",
+    "vibe": "cozy",
+    "category": "Home > Blankets",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "vanilla-candle",
+    "name": "Vanilla Candle",
+    "emoji": "🕯️",
+    "vibe": "cozy",
+    "category": "Home > Candles",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "chamomile-tea",
+    "name": "Chamomile Tea",
+    "emoji": "🍵",
+    "vibe": "cozy",
+    "category": "Kitchen > Tea",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "wool-slippers",
+    "name": "Wool Slippers",
+    "emoji": "🥿",
+    "vibe": "cozy",
+    "category": "Clothing > Slippers",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "knit-mittens",
+    "name": "Knit Mittens",
+    "emoji": "🧤",
+    "vibe": "cozy",
+    "category": "Clothing > Gloves",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "cocoa-mix",
+    "name": "Cocoa Mix",
+    "emoji": "☕",
+    "vibe": "cozy",
+    "category": "Kitchen > Cocoa",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "fuzzy-socks",
+    "name": "Fuzzy Socks",
+    "emoji": "🧦",
+    "vibe": "cozy",
+    "category": "Clothing > Socks",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "flannel-pajamas",
+    "name": "Flannel Pajamas",
+    "emoji": "🛌",
+    "vibe": "cozy",
+    "category": "Clothing > Sleepwear",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "cable-cardigan",
+    "name": "Cable Cardigan",
+    "emoji": "🧥",
+    "vibe": "cozy",
+    "category": "Clothing > Knitwear",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "hot-water-bottle",
+    "name": "Hot Water Bottle",
+    "emoji": "♨️",
+    "vibe": "cozy",
+    "category": "Home > Warmers",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "ceramic-teapot",
+    "name": "Ceramic Teapot",
+    "emoji": "🫖",
+    "vibe": "cozy",
+    "category": "Kitchen > Teapots",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "fireside-logs",
+    "name": "Fireside Logs",
+    "emoji": "🪵",
+    "vibe": "cozy",
+    "category": "Home > Fireplace",
+    "price": 4,
+    "tone": "neutral"
+  },
+  {
+    "id": "reading-lamp",
+    "name": "Reading Lamp",
+    "emoji": "💡",
+    "vibe": "cozy",
+    "category": "Home > Lighting",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "plush-cushion",
+    "name": "Plush Cushion",
+    "emoji": "🧸",
+    "vibe": "cozy",
+    "category": "Home > Cushions",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "jigsaw-puzzle",
+    "name": "Jigsaw Puzzle",
+    "emoji": "🧩",
+    "vibe": "cozy",
+    "category": "Games > Puzzles",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "paperback-novel",
+    "name": "Paperback Novel",
+    "emoji": "📖",
+    "vibe": "cozy",
+    "category": "Books > Fiction",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "trail-boots",
+    "name": "Trail Boots",
+    "emoji": "🥾",
+    "vibe": "adventure",
+    "category": "Outdoor > Footwear",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "day-backpack",
+    "name": "Day Backpack",
+    "emoji": "🎒",
+    "vibe": "adventure",
+    "category": "Outdoor > Packs",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "two-person-tent",
+    "name": "Two-Person Tent",
+    "emoji": "⛺",
+    "vibe": "adventure",
+    "category": "Outdoor > Camping",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "trail-headlamp",
+    "name": "Trail Headlamp",
+    "emoji": "🔦",
+    "vibe": "adventure",
+    "category": "Outdoor > Lighting",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "pocket-compass",
+    "name": "Pocket Compass",
+    "emoji": "🧭",
+    "vibe": "adventure",
+    "category": "Outdoor > Navigation",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "passport-holder",
+    "name": "Passport Holder",
+    "emoji": "🛂",
+    "vibe": "adventure",
+    "category": "Travel > Documents",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "carry-on-suitcase",
+    "name": "Carry-On Suitcase",
+    "emoji": "🧳",
+    "vibe": "adventure",
+    "category": "Travel > Luggage",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "trekking-poles",
+    "name": "Trekking Poles",
+    "emoji": "⛰️",
+    "vibe": "adventure",
+    "category": "Outdoor > Hiking",
+    "price": 4,
+    "tone": "neutral"
+  },
+  {
+    "id": "camp-stove",
+    "name": "Camp Stove",
+    "emoji": "🔥",
+    "vibe": "adventure",
+    "category": "Outdoor > Cooking",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "rain-jacket",
+    "name": "Rain Jacket",
+    "emoji": "🌧️",
+    "vibe": "adventure",
+    "category": "Clothing > Outerwear",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "sleeping-bag",
+    "name": "Sleeping Bag",
+    "emoji": "🛏️",
+    "vibe": "adventure",
+    "category": "Outdoor > Sleep Gear",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "steel-bottle",
+    "name": "Steel Bottle",
+    "emoji": "🚰",
+    "vibe": "adventure",
+    "category": "Outdoor > Hydration",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "wide-brim-hat",
+    "name": "Wide Brim Hat",
+    "emoji": "👒",
+    "vibe": "adventure",
+    "category": "Clothing > Hats",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "kayak-paddle",
+    "name": "Kayak Paddle",
+    "emoji": "🛶",
+    "vibe": "adventure",
+    "category": "Outdoor > Water Sports",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "travel-journal",
+    "name": "Travel Journal",
+    "emoji": "📓",
+    "vibe": "adventure",
+    "category": "Travel > Journals",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "field-binoculars",
+    "name": "Field Binoculars",
+    "emoji": "🔭",
+    "vibe": "adventure",
+    "category": "Outdoor > Optics",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "wireless-earbuds",
+    "name": "Wireless Earbuds",
+    "emoji": "🎧",
+    "vibe": "tech",
+    "category": "Electronics > Audio",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "phone-charger",
+    "name": "Phone Charger",
+    "emoji": "🔌",
+    "vibe": "tech",
+    "category": "Electronics > Chargers",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "smart-watch",
+    "name": "Smart Watch",
+    "emoji": "⌚",
+    "vibe": "tech",
+    "category": "Electronics > Wearables",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "clicky-keyboard",
+    "name": "Clicky Keyboard",
+    "emoji": "⌨️",
+    "vibe": "tech",
+    "category": "Electronics > Computer",
+    "price": 4,
+    "tone": "neutral"
+  },
+  {
+    "id": "gaming-mouse",
+    "name": "Gaming Mouse",
+    "emoji": "🖱️",
+    "vibe": "tech",
+    "category": "Electronics > Computer",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "portable-speaker",
+    "name": "Portable Speaker",
+    "emoji": "🔊",
+    "vibe": "tech",
+    "category": "Electronics > Audio",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "power-bank",
+    "name": "Power Bank",
+    "emoji": "🔋",
+    "vibe": "tech",
+    "category": "Electronics > Batteries",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "desk-webcam",
+    "name": "Desk Webcam",
+    "emoji": "📹",
+    "vibe": "tech",
+    "category": "Electronics > Cameras",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "laptop-sleeve",
+    "name": "Laptop Sleeve",
+    "emoji": "💻",
+    "vibe": "tech",
+    "category": "Electronics > Accessories",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "led-strip-lights",
+    "name": "LED Strip Lights",
+    "emoji": "🌈",
+    "vibe": "tech",
+    "category": "Electronics > Smart Home",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "mini-drone",
+    "name": "Mini Drone",
+    "emoji": "🚁",
+    "vibe": "tech",
+    "category": "Electronics > Drones",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "game-controller",
+    "name": "Game Controller",
+    "emoji": "🎮",
+    "vibe": "tech",
+    "category": "Electronics > Gaming",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "e-reader",
+    "name": "E-Reader",
+    "emoji": "📚",
+    "vibe": "tech",
+    "category": "Electronics > Readers",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "cable-organizer",
+    "name": "Cable Organizer",
+    "emoji": "🧰",
+    "vibe": "tech",
+    "category": "Electronics > Accessories",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "robot-vacuum",
+    "name": "Robot Vacuum",
+    "emoji": "🤖",
+    "vibe": "tech",
+    "category": "Home > Gadgets",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "vr-headset",
+    "name": "VR Headset",
+    "emoji": "🥽",
+    "vibe": "tech",
+    "category": "Electronics > Gaming",
+    "price": 4,
+    "tone": "neutral"
+  },
+  {
+    "id": "silk-scarf",
+    "name": "Silk Scarf",
+    "emoji": "🧣",
+    "vibe": "luxe",
+    "category": "Accessories > Scarves",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "leather-wallet",
+    "name": "Leather Wallet",
+    "emoji": "👛",
+    "vibe": "luxe",
+    "category": "Accessories > Wallets",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "diamond-studs",
+    "name": "Diamond Studs",
+    "emoji": "💎",
+    "vibe": "luxe",
+    "category": "Jewelry > Earrings",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "signet-ring",
+    "name": "Signet Ring",
+    "emoji": "💍",
+    "vibe": "luxe",
+    "category": "Accessories > Rings",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "gilded-mirror",
+    "name": "Gilded Mirror",
+    "emoji": "🪞",
+    "vibe": "luxe",
+    "category": "Home > Mirrors",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "truffle-oil",
+    "name": "Truffle Oil",
+    "emoji": "🍄",
+    "vibe": "luxe",
+    "category": "Food > Gourmet",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "cashmere-sweater",
+    "name": "Cashmere Sweater",
+    "emoji": "🧶",
+    "vibe": "luxe",
+    "category": "Clothing > Knitwear",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "silk-robe",
+    "name": "Silk Robe",
+    "emoji": "👘",
+    "vibe": "luxe",
+    "category": "Clothing > Loungewear",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "rose-perfume",
+    "name": "Rose Perfume",
+    "emoji": "🌹",
+    "vibe": "luxe",
+    "category": "Beauty > Fragrance",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "fountain-pen",
+    "name": "Fountain Pen",
+    "emoji": "🖋️",
+    "vibe": "luxe",
+    "category": "Stationery > Pens",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "dress-watch",
+    "name": "Dress Watch",
+    "emoji": "🕰️",
+    "vibe": "luxe",
+    "category": "Accessories > Watches",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "aviator-shades",
+    "name": "Aviator Shades",
+    "emoji": "🕶️",
+    "vibe": "luxe",
+    "category": "Accessories > Eyewear",
+    "price": 4,
+    "tone": "neutral"
+  },
+  {
+    "id": "leather-tote",
+    "name": "Leather Tote",
+    "emoji": "👜",
+    "vibe": "luxe",
+    "category": "Accessories > Bags",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "crystal-flutes",
+    "name": "Crystal Flutes",
+    "emoji": "🥂",
+    "vibe": "luxe",
+    "category": "Home > Glassware",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "opera-tickets",
+    "name": "Opera Tickets",
+    "emoji": "🎭",
+    "vibe": "luxe",
+    "category": "Experiences > Theatre",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "gold-chain",
+    "name": "Gold Chain",
+    "emoji": "🔗",
+    "vibe": "luxe",
+    "category": "Jewelry > Necklaces",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "yoga-mat",
+    "name": "Yoga Mat",
+    "emoji": "🧘",
+    "vibe": "wellness",
+    "category": "Fitness > Yoga",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "resistance-bands",
+    "name": "Resistance Bands",
+    "emoji": "💪",
+    "vibe": "wellness",
+    "category": "Fitness > Strength",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "sleep-mask",
+    "name": "Sleep Mask",
+    "emoji": "😴",
+    "vibe": "wellness",
+    "category": "Sleep > Masks",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "face-moisturizer",
+    "name": "Face Moisturizer",
+    "emoji": "🧴",
+    "vibe": "wellness",
+    "category": "Skincare > Moisturizer",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "gratitude-journal",
+    "name": "Gratitude Journal",
+    "emoji": "✍️",
+    "vibe": "wellness",
+    "category": "Mindfulness > Journals",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "running-shoes",
+    "name": "Running Shoes",
+    "emoji": "👟",
+    "vibe": "wellness",
+    "category": "Fitness > Running",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "green-smoothie",
+    "name": "Green Smoothie",
+    "emoji": "🥤",
+    "vibe": "wellness",
+    "category": "Food > Smoothies",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "essential-oils",
+    "name": "Essential Oils",
+    "emoji": "🌿",
+    "vibe": "wellness",
+    "category": "Self-Care > Aromatherapy",
+    "price": 4,
+    "tone": "neutral"
+  },
+  {
+    "id": "massage-gun",
+    "name": "Massage Gun",
+    "emoji": "💆",
+    "vibe": "wellness",
+    "category": "Recovery > Massage",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "bath-salts",
+    "name": "Bath Salts",
+    "emoji": "🛁",
+    "vibe": "wellness",
+    "category": "Self-Care > Bath",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "jump-rope",
+    "name": "Jump Rope",
+    "emoji": "🤸",
+    "vibe": "wellness",
+    "category": "Fitness > Cardio",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "walking-pad",
+    "name": "Walking Pad",
+    "emoji": "🚶",
+    "vibe": "wellness",
+    "category": "Fitness > Cardio",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "mineral-sunscreen",
+    "name": "Mineral Sunscreen",
+    "emoji": "☀️",
+    "vibe": "wellness",
+    "category": "Skincare > Sun Care",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "mineral-water",
+    "name": "Mineral Water",
+    "emoji": "💧",
+    "vibe": "wellness",
+    "category": "Drinks > Water",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "dumbbell-set",
+    "name": "Dumbbell Set",
+    "emoji": "🏋️",
+    "vibe": "wellness",
+    "category": "Fitness > Weights",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "spin-bike",
+    "name": "Spin Bike",
+    "emoji": "🚴",
+    "vibe": "wellness",
+    "category": "Fitness > Cycling",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "chocolate-truffles",
+    "name": "Chocolate Truffles",
+    "emoji": "🍫",
+    "vibe": "indulgent",
+    "category": "Sweets > Chocolate",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "glazed-donuts",
+    "name": "Glazed Donuts",
+    "emoji": "🍩",
+    "vibe": "indulgent",
+    "category": "Bakery > Donuts",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "ice-cream-pint",
+    "name": "Ice Cream Pint",
+    "emoji": "🍨",
+    "vibe": "indulgent",
+    "category": "Frozen > Ice Cream",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "cheese-pizza",
+    "name": "Cheese Pizza",
+    "emoji": "🍕",
+    "vibe": "indulgent",
+    "category": "Takeout > Pizza",
+    "price": 4,
+    "tone": "neutral"
+  },
+  {
+    "id": "loaded-fries",
+    "name": "Loaded Fries",
+    "emoji": "🍟",
+    "vibe": "indulgent",
+    "category": "Takeout > Sides",
+    "price": 1,
+    "tone": "warm"
+  },
+  {
+    "id": "double-burger",
+    "name": "Double Burger",
+    "emoji": "🍔",
+    "vibe": "indulgent",
+    "category": "Takeout > Burgers",
+    "price": 2,
+    "tone": "cool"
+  },
+  {
+    "id": "layer-cake",
+    "name": "Layer Cake",
+    "emoji": "🍰",
+    "vibe": "indulgent",
+    "category": "Bakery > Cakes",
+    "price": 3,
+    "tone": "neutral"
+  },
+  {
+    "id": "gummy-bears",
+    "name": "Gummy Bears",
+    "emoji": "🍬",
+    "vibe": "indulgent",
+    "category": "Sweets > Candy",
+    "price": 4,
+    "tone": "warm"
+  },
+  {
+    "id": "swirl-lollipops",
+    "name": "Swirl Lollipops",
+    "emoji": "🍭",
+    "vibe": "indulgent",
+    "category": "Sweets > Lollipops",
+    "price": 1,
+    "tone": "cool"
+  },
+  {
+    "id": "buttery-popcorn",
+    "name": "Buttery Popcorn",
+    "emoji": "🍿",
+    "vibe": "indulgent",
+    "category": "Snacks > Popcorn",
+    "price": 2,
+    "tone": "neutral"
+  },
+  {
+    "id": "fried-chicken",
+    "name": "Fried Chicken",
+    "emoji": "🍗",
+    "vibe": "indulgent",
+    "category": "Takeout > Chicken",
+    "price": 3,
+    "tone": "warm"
+  },
+  {
+    "id": "cookie-box",
+    "name": "Cookie Box",
+    "emoji": "🍪",
+    "vibe": "indulgent",
+    "category": "Bakery > Cookies",
+    "price": 4,
+    "tone": "cool"
+  },
+  {
+    "id": "boba-tea",
+    "name": "Boba Tea",
+    "emoji": "🧋",
+    "vibe": "indulgent",
+    "category": "Drinks > Bubble Tea",
+    "price": 1,
+    "tone": "neutral"
+  },
+  {
+    "id": "soft-pretzel",
+    "name": "Soft Pretzel",
+    "emoji": "🥨",
+    "vibe": "indulgent",
+    "category": "Food > Snacks",
+    "price": 2,
+    "tone": "warm"
+  },
+  {
+    "id": "butter-croissant",
+    "name": "Butter Croissant",
+    "emoji": "🥐",
+    "vibe": "indulgent",
+    "category": "Bakery > Pastry",
+    "price": 3,
+    "tone": "cool"
+  },
+  {
+    "id": "street-tacos",
+    "name": "Street Tacos",
+    "emoji": "🌮",
+    "vibe": "indulgent",
+    "category": "Takeout > Tacos",
+    "price": 4,
+    "tone": "neutral"
+  }
+]

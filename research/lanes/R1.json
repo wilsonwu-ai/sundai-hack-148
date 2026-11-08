@@ -1,0 +1,127 @@
+{
+ "lane": "R1",
+ "facts": [
+  {
+   "id": "R1-F1",
+   "claim": "HSTU (Meta, 2024) beats baselines by up to 65.8% NDCG and is 5.3x to 15.2x faster (achieved, offline benchmarks).",
+   "url": "https://arxiv.org/abs/2402.17152",
+   "quote": "HSTU outperforms baselines over synthetic and public datasets by up to 65.8% in NDCG, and is 5.3x to 15.2x faster",
+   "date": "2024"
+  },
+  {
+   "id": "R1-F2",
+   "claim": "Meta's 1.5T-parameter HSTU generative recommenders improved online A/B metrics by 12.4% (achieved, production).",
+   "url": "https://arxiv.org/abs/2402.17152",
+   "quote": "HSTU-based Generative Recommenders, with 1.5 trillion parameters, improve metrics in online A/B tests by 12.4%",
+   "date": "2024"
+  },
+  {
+   "id": "R1-F3",
+   "claim": "Generative recommender quality scales as a power-law of training compute, like LLMs.",
+   "url": "https://arxiv.org/abs/2402.17152",
+   "quote": "the model quality of Generative Recommenders empirically scales as a power-law of training compute",
+   "date": "2024"
+  },
+  {
+   "id": "R1-F4",
+   "claim": "Centaur is trained on Psych-101: over 60,000 participants, over 10M choices, 160 experiments.",
+   "url": "https://arxiv.org/abs/2410.20268",
+   "quote": "scale, covering trial-by-trial data from over 60,000 participants performing over 10,000,000 choices in 160 experiments",
+   "date": "2024 preprint (Nature 2025)"
+  },
+  {
+   "id": "R1-F5",
+   "claim": "Centaur predicts held-out participants better than existing cognitive models (achieved, lab tasks only).",
+   "url": "https://arxiv.org/abs/2410.20268",
+   "quote": "Centaur not only captures the behavior of held-out participants better than existing cognitive models, but also generalizes",
+   "date": "2024 preprint (Nature 2025)"
+  },
+  {
+   "id": "R1-F6",
+   "claim": "Park et al.: agents built from 2-hour interviews of 1,052 Americans (not 1,000) matched 83%/82%/86% of people's own 2-week test-retest consistency.",
+   "url": "https://arxiv.org/abs/2411.10109",
+   "quote": "achieved accuracies equal to 83%, 82%, and 86% of participants' own two-week test-retest consistency benchmark",
+   "date": "2024"
+  },
+  {
+   "id": "R1-F7",
+   "claim": "Park et al. sample size is 1,052, built from interviews.",
+   "url": "https://arxiv.org/abs/2411.10109",
+   "quote": "Using data from a diverse national sample of 1,052 Americans, we built agents from (i) two-hour, semi-structured interviews",
+   "date": "2024"
+  },
+  {
+   "id": "R1-F8",
+   "claim": "Twin-2K-500 digital-twin dataset: 2,058 US participants, 500 questions, four waves; authors report only early quality checks.",
+   "url": "https://arxiv.org/abs/2505.17479",
+   "quote": "survey a representative sample of N = 2,058 participants (average 2.42 hours per person) in the US across four waves",
+   "date": "2025"
+  },
+  {
+   "id": "R1-F9",
+   "claim": "life2vec used national registry data on more than six million people.",
+   "url": "https://arxiv.org/abs/2306.03009",
+   "quote": "the most comprehensive registry data in existence, available for an entire nation of more than six million individuals",
+   "date": "2023"
+  },
+  {
+   "id": "R1-F10",
+   "claim": "life2vec claims prediction from early mortality to personality nuances (no accuracy number in abstract).",
+   "url": "https://arxiv.org/abs/2306.03009",
+   "quote": "Our models allow us to predict diverse outcomes ranging from early mortality to personality nuances",
+   "date": "2023"
+  },
+  {
+   "id": "R1-F11",
+   "claim": "Fragile Families Challenge: 160 teams, best predictions of life outcomes only slightly better than a simple benchmark (achieved accuracy low).",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "the best predictions were not very accurate and were only slightly better than those from a simple benchmark model",
+   "date": "2020"
+  },
+  {
+   "id": "R1-F12",
+   "claim": "Fragile Families: 160 teams built models for six life outcomes.",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "160 teams built predictive models for six life outcomes using data from the Fragile Families and Child Wellbeing Study",
+   "date": "2020"
+  },
+  {
+   "id": "R1-F13",
+   "claim": "Song et al. 2010: entropy gives 93% POTENTIAL predictability of mobility (an upper bound, not achieved model accuracy).",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20167789&retmode=text&rettype=abstract",
+   "quote": "By measuring the entropy of each individual's trajectory, we find a 93% potential predictability in user mobility",
+   "date": "2010"
+  },
+  {
+   "id": "R1-F14",
+   "claim": "Song et al.: predictability barely varies between people.",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=20167789&retmode=text&rettype=abstract",
+   "quote": "we find a remarkable lack of variability in predictability, which is largely independent of the distance users cover",
+   "date": "2010"
+  },
+  {
+   "id": "R1-F15",
+   "claim": "Youyou et al. 2015: computer judgments from Likes beat Facebook friends' judgments (r=0.56 vs 0.49); personality traits, not next actions.",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "computer predictions based on a generic digital footprint (Facebook Likes) are more accurate (r = 0.56) than those made by the participants' Facebook friends using a personality questionnaire (r = 0.49)",
+   "date": "2015"
+  },
+  {
+   "id": "R1-F16",
+   "claim": "Soon et al. 2008: brain activity encodes a simple free choice outcome up to 10 s before awareness (lab button-press task, above-chance not certain).",
+   "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32229555,20522719,25583507,18408715&retmode=text&rettype=abstract",
+   "quote": "the outcome of a decision can be encoded in brain activity of prefrontal and parietal cortex up to 10 s",
+   "date": "2008"
+  },
+  {
+   "id": "R1-F17",
+   "claim": "Aaronson Oracle (Berkeley web version): you press f and d 'randomly' and it guesses your next key with a live rolling accuracy.",
+   "url": "https://people.ischool.berkeley.edu/~nick/aaronson-oracle/",
+   "quote": "Press the 'f' and 'd' keys randomly. As randomly as you can. I'll try to predict which key you'll press next.",
+   "date": "undated"
+  }
+ ],
+ "projects": [],
+ "idea_seeds": [],
+ "viral_evidence": []
+}

@@ -1,0 +1,20 @@
+node_modules
+dist
+playwright-report
+test-results
+.wrangler
+worker/.dev.vars
+.env*
+!.env.example
+research/sources/*.pdf
+__pycache__/
+*.pyc
+scripts/defy_catalog.parquet
+
+# third-party copies stay local (sponsor paper, SDK, docs); cite by URL instead
+research/sources/
+# raw scraped X posts stay local; research/x/x_signals.md is the summary
+research/x/*_raw.json
+research/x/read_top.json
+research/x/*_err.txt
+research/quotecheck.err
