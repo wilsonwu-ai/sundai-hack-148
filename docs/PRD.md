@@ -1,8 +1,8 @@
 # DEFY PRD
 
-Sundai Hack 148, Sunday 2026-11-08. Owner: Wilson. Status: draft for build day.
+Sundai Hack 148, Sunday 2026-11-08. Owner: Wilson. Status: shipped on build day, live at https://wilsonwu-ai.github.io/sundai-hack-148/. Sections 1 to 11 are the plan written before the build, kept as written. Section 12 records what shipped, what changed and which open questions were answered.
 
-Sources: `SPEC.md` (the frozen build spec, cited as SPEC), `research/PICK.md`, `research/verified.json` (facts cited by id with the source link, verified entries only), the event page (`research/event.md`), the X signals table (`research/x/x_signals.md`) and `research/rubric.md`. Numbers are cited to one of these. DEFY has not been played yet, so this document states no outcome numbers.
+Sources: `SPEC.md` (the frozen build spec, cited as SPEC), `research/PICK.md`, `research/verified.json` (facts cited by id with the source link, verified entries only), the event page (`research/event.md`), the X signals table (`research/x/x_signals.md`) and `research/rubric.md`. Numbers are cited to one of these. The plan was written before anyone played DEFY, so sections 1 to 11 state no outcome numbers; measured numbers are in section 12.
 
 ## 1. Executive summary
 
@@ -151,3 +151,26 @@ Event schedule (event page, MIT IHQ, 292 Main St, Cambridge): 10:00 Sundai intro
 - **Q4.** Does the guest or Unbox want a specific credit line or badge on the card?
 - **Q5.** Do we turn on the engine-duel Lab view (`?lab`) for the final presentation, or keep it hidden?
 - **Q6.** Where do launch posts go, and who approves them before they go out?
+
+## 12. What shipped (8 November)
+
+**Live.** The static site runs on GitHub Pages, and the Cloudflare Worker answers on BehaviorGPT-v4 with the key held as a server secret. In one live game on the public site, all 12 turns were ranked by BehaviorGPT-v4 (12 of 12 rank calls returned 200). The first three calls took 341 to 432 ms upstream and the other nine 141 to 150 ms, all inside the 800 ms fallback window. That test game's result was blocked from the histogram.
+
+**Open questions answered.**
+- **Q2, yes.** The emoji-only 96-item catalog uploaded through the SDK with no images.
+- **Q3, still no published limit.** The Worker keeps its own best-effort limit of 60 rank calls per minute per IP.
+
+**Two integration bugs only a real key showed.** The live API nests the ranked page under `products` (`{products: {items}}`), while the SDK's types read a top-level `items`. The SDK also names the catalog in an `x-catalog-id` header. Both are fixed in `worker/src/index.ts`, and every failure path now logs its reason, never the key.
+
+**Added after reading the sponsor's material and the Sundai guide.**
+
+| Addition | Why | Where |
+|---|---|---|
+| Boldest pick on the result | Unbox's anomaly demo flags fraud from how unlikely each step of a session is ([R2-F14](https://github.com/Unbox-AI/behaviorgpt-anomaly)); DEFY names the pick the model least expected, using the odds recorded when it sealed its guess | `src/engine/boldest.ts`, result screen |
+| Play-along QR on wide screens | Sundai's top five demo live over a shared screen and slides are not allowed (sundai.club/guide), so the room scans and plays | `public/qr.svg`, intro screen |
+| Zero-shot copy | The paper's title promises zero-shot transfer ([S-1](https://research.unboxai.com/behaviorgpt-v4-one-large-behavioral-model.pdf)); BehaviorGPT ranks our 96 items without ever training on them | How it works, README |
+| Live percentile | The result screen reloads the stats after posting, so the percentile appears once 20 players have finished | `src/ui/app.ts` |
+
+**Build checks.** Typecheck clean. 60 unit and simulation cases pass, and the frozen A2 simulation still holds. 11 browser checks pass on a Pixel 7 profile and on desktop, with the phone-only tap-size check skipped on desktop. The production build ships 18 kB of gzipped JavaScript (`research/qa/test-output.txt`).
+
+**Event outcomes.** Card likes, replays per player, share-card rate and BehaviorGPT call counts (section 6) are recorded here after 20:30.

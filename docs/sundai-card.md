@@ -9,6 +9,8 @@ An AI seals its guess before each of your 12 taps, then shows you its guess and 
 
 **Thumbnail:** `public/og.png` (1200 x 630: the DEFY wordmark, "It already guessed your next tap." and the sealed 2x2 with the "I predict you'll pick this" badge). A real figure from the work, not AI art.
 
+**Video for posts:** `docs/motion/defy-turn.mp4` (14.5 s, 1080 x 1080, one sealed turn per round, ends on the URL). `docs/motion/defy-turn.gif` is the same animation for places that only take images.
+
 **Demo:** https://wilsonwu-ai.github.io/sundai-hack-148/
 
 **GitHub:** https://github.com/wilsonwu-ai/sundai-hack-148
@@ -33,8 +35,7 @@ A toy, not a study. Twelve taps cannot measure free will.
 
 ## Before posting
 
-- The Worker was live on BehaviorGPT-v4 on 8 November (rank call 200, about 190 ms upstream). If it stops answering before 19:45, change the second paragraph to: "It runs on an on-device habit model, with a BehaviorGPT-v4 mode through a small Cloudflare Worker that keeps the key on the server." The game itself needs no change: any turn the live model misses falls back to the habit model, and the result says which engine answered.
-- The demo link 404s until the repo is public and GitHub Pages has deployed. Check it loads before setting the card live.
+- The site and Worker are live: one full game on the public site on 8 November got all 12 turns from BehaviorGPT-v4 (141 to 432 ms upstream). If it stops answering before 19:45, change the second paragraph to: "It runs on an on-device habit model, with a BehaviorGPT-v4 mode through a small Cloudflare Worker that keeps the key on the server." The game itself needs no change: if the live model misses once, that game finishes on the habit model, and the result says which engine answered.
 - Numbers: 23.0%, 25% and 76.6% come from `research/qa/test-output.txt`; 200 games from `SPEC.md` A2; 1,305 and 40% from `research/verified.json` (R3-F13a, R3-F13).
 
 ## Pitch (top five only: 5 minutes, no slides, shared screen)
