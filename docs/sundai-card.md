@@ -19,7 +19,7 @@ DEFY is a 60-second phone game about behavioral prediction. Before every tap, th
 
 It runs on Unbox AI's BehaviorGPT through a small Cloudflare Worker that keeps the key on the server, blended with an on-device habit model that keeps the game working offline.
 
-It can't be rigged: in a frozen simulation of 200 games per player type, a random player lands at chance (23.0% against 25%), while a player with consistent taste gets called 76.6% of the time.
+It can't be rigged: in a frozen simulation of the on-device habit model (200 games per player type), a random player lands at chance (23.0% against 25%), while a player with consistent taste gets called 76.6% of the time.
 
 Why it matters: in a 2026 study of 1,305 people, over 40% treated an AI as an authority on their own behavior (arXiv 2603.28944). Round 2 lets you test that on yourself.
 
